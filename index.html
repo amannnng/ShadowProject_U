@@ -1,100 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>University of Texas at San Antonio - About the College of Business - UTSA MBA, Top Ranked MBA Program in Texas, the Southwest, and Nationwide.</title>
-<link href="CSS/menu.css" type="text/css" rel="stylesheet">
-</head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
 
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
 <body>
 
-<div id="top"></div>
-<div id="line"></div>
-<nav>
-	  <li><a href="Utsa_Home.htm">Home</a></li>
-	  <li><a href="Utsa_Research.htm">Research</a></li>
-	  <li><a href="Utsa_Alumni.htm">Alumni</a></li>
-	  <li><a href="Utsa_AboutUs.htm">About Us</a></li>
-</nav>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
-<img src="Images/images (2).jpg" alt="" width="850" align = "middle" height="250" />
-<div> 
-	<table bgcolor="#FFF" border="0" width=100% style="width:850px;" align="center">
-	    <tbody>
-    <tr>
-      <td valign="top" bgcolor="#DDDDDD">
-<table width="185" border="1" align="left">
-  <tbody>
-            <tr>
-              <td scope="row">About COB Home</td>
-            </tr>
-            <tr>
-              <td scope="row">Mission Statement</td>
-            </tr>
-            <tr>
-              <td scope="row">College Profile</td>
-            </tr>
-            <tr>
-              <td align="left" valign="top" scope="row">About the Dean</td>
-            </tr>
-            <tr>
-              <td scope="row">Administration</td>
-            </tr>
-            <tr>
-              <td scope="row">History</td>
-            </tr>
-            <tr>
-              <td scope="row">About UTSA</td>
-            </tr>
-          </tbody>
-      </table></td>
-      <td ><table border="0">
-        <tbody>
-          <tr>
-            <td width="637"><img src="Images/ban_aboutus_text.jpg" width="640" height="25" alt=""/></td>
-            </tr>
-          <tr>
-            <td>
-              <p>The College of Business at The University of Texas at San Antonio offers a comprehensive curriculum at the undergraduate, master's and doctoral level that expands the boundaries of a traditional business education. Want to go to Home page. </p>
-              <img src="Images/pic_aboutus_1.jpg" alt="" width="308" height="201"  align="right"/>
-              <p>With over 5,700 students, the college is the 31st largest undergraduate business program and the 38th largest business school in the nation. </p>
-              <p>Nationally ranked and recognized, the College of Business was named one of the Top 5 undergraduate business programs in Texas by Bloomberg Businessweek. At the graduate level, the college was ranked the No. 10 graduate business school in the nation for Hispanics by Hispanic Business. Additional MBA accolades include being named one of the top 10 MBA programs for minority students by the Princeton Review for the past ten years and receiving the Brillante Award for Educational Excellence from the National Society of Hispanic MBA's in 2013. <br>
-                <br>
-                UTSA was named the #1 ranked cyber security program in the country according to a national survey of certified information technology security professionals conducted by the Ponemon Institute. UTSA is one of 47 universities designated as a Center of Academic Excellence in Information Assurance Research by the National Security Agency and the Department of Homeland Security. UTSA has also been designated as a Center of Academic Excellence in Information Assurance/Cyber Defense education. This designation was based on the curriculum and programs in the College of Business. </p>
-              <p>The UTSA College of Business transforms students from the curious and hopeful into confident and career-ready young professionals. We aim to be the best in class by focusing on educational programs that provide both applied business and technical skills in areas of high-workforce demand as well as professional and entrepreneurial skills that help students create value for their organization and integrate into the workforce. We are a community of scholars who advance the art and science of business through rigorous and relevant research that is published in outlets of distinction and translated for practice in the classroom.</p>
-                <br>
-				<p><img src="Images/pic_aboutus_2.jpg" width="308" height="201" align="left" hspace = "10" class="imageAboutUs"></p>
-                <p>The College of Business is accredited by AACSB International, the Association to Advance Collegiate Schools of Business. This accreditation addresses curriculum issues, credentials of professors, student to teacher ratio issues and educational resources. The college is a member of the European Foundation for Management Development, BALAS and CLADEA.</p></td>
-            </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
 </div>
-	
-<table align="center" width="100%">
-<tbody>
-	<tr>
-	
-		<td bgcolor="#051E42">
 
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WE <span class="w3-hide-small">ARE</span> COOKING</span>
+  </div>
+</div>
 
-			<div align="center" id="footer">
-	
-				<div id="footer">  			
-            
-					<p class="footer-contact"><a href="http://utsa.edu">© The University of Texas at San Antonio</a> | One UTSA Circle, San Antonio TX 78249 | Information: 210-458-4011 | UTSA Police: 210-458-4242</p>
-	
-				</div>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SALES</span>
+  </div>
+</div>
 
-			</div>
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">DEALS</span>
+  </div>
+</div>
 
-		</td>
-	</tr>
-</tbody>
-</table>	
-	
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
-
 </html>

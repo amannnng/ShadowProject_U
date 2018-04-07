@@ -102,10 +102,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</select>
 <?php
 if($_SERVER['REQUEST_METHOD']=="POST")
-{
+{echo '1';
 // connect to mongodb
    $m = new MongoClient();
-   // select a database
+  echo '2'; // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
 if(!empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))

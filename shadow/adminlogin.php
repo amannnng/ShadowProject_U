@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    // select a database
    $db = $m->dealhunter;
    $collection = $db->admin;
-
+echo '1';
 if(!empty($_POST['username']) && !empty($_POST['password']))
 {
 	$username = $_POST['username'];
@@ -115,7 +115,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 		{
 			session_start();
 			$_SESSION['name']=$username;	
-			echo 'login success';
+			//echo 'login success';
 			header('Location: adminportal.php');
 		}
 		

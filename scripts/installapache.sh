@@ -1,2 +1,2 @@
 #!/bin/bash
-yum -y install httpd
+sudo apt-get install apache2

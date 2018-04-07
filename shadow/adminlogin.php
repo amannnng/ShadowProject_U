@@ -90,14 +90,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="password" name="password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
 <?php
-echo '1';
+
    // connect to mongodb
    $m = new MongoClient();
-echo '2';   // select a database
+ // select a database
    $db = $m->dealhunter;
-   echo '3';
+   
    $collection = $db->admin;
-echo '4';
+
 if(!empty($_POST['username']) && !empty($_POST['password']))
 {
 	$username = $_POST['username'];

@@ -90,6 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="password" name="password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
 <?php
+echo '2';
    // connect to mongodb
    $m = new MongoClient();
    // select a database

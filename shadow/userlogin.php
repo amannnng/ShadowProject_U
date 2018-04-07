@@ -200,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				  <div class="form">
 					<h2>Login to your account</h2>
-					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+					<form action="userlogin.php" method="post">
 					  <input type="text" name="username" placeholder="Username" required=" ">
 					  <input type="password" name="password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
@@ -230,8 +230,8 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	{
 		if($collection->find(array("username"=>$username,"password"=>$password)))
 		{
-			session_start();
-			$_SESSION['name']=$username;
+			//session_start();
+			//$_SESSION['name']=$username;
 			//print_r($_SESSION);	
 			header('Location: index.php');
 		}

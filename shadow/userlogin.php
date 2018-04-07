@@ -230,8 +230,8 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	{
 		if($collection->find(array("username"=>$username,"password"=>$password)))
 		{
-			//session_start();
-			//$_SESSION['name']=$username;
+			session_start();
+			$_SESSION['name']=$username;
 			//print_r($_SESSION);	
 			header('Location: index.php');
 		}

@@ -89,20 +89,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 					<input type="text" name="brand" placeholder="Brand Name" required=" ">
 					<input type="text" name="product" placeholder="Product Name" required=" ">
-					<input type="text" name="category" placeholder="Category" required=" ">	
-						<select name="category">
+					
+						<input name="category"><li>
 							<option selected="selected">Select categary</option>
 							<option value="mobile">Mobile</option>
 							<option value="television">Television</option>
 							<option value="camera">Camera</option>
 							<option value="networking">Networking</option>
 							<option value="homeappliances">Home Appliances</option>
-							<option value="grocery">Grocery</option>
-						</select><br>
+							<option value="grocery">Grocery</option></li>
+						</input><br>
 					<input type="text" name="description" placeholder="Description" required=" ">
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" ">
+					<a>Select image:</a>
 					<input type="file" name="fileToUpload" id="fileToUpload">
 					<br>
 						<select name="storelocation">

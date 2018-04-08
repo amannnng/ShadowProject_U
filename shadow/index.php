@@ -248,7 +248,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container"><br>
-			<h3>Hot Offers</h3>
+			<h3>............................Hot Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{

@@ -72,8 +72,9 @@
    $db = $m->dealhunter;
    $collection = $db->coupons;
 echo $pathInS3;
+echo "hhhhhhhhhhhhhhhh";
 if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
- { echo "hhhhhhhhhhhhhhhh";
+ { 
    $brand = $_POST['brand'];
    $product = $_POST['product'];
    $category = $_POST['category'];

@@ -1,51 +1,4 @@
 <?php
-
-
-// connect to mongodb
-   $m = new MongoClient();
-   // select a database
-   $db = $m->dealhunter;
-   $collection = $db->coupons;
-echo $pathInS3;
-echo "hhhhhhhhhhhhhhhh";
-if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
- { 
-   $brand = $_POST['brand'];
-   $product = $_POST['product'];
-   $category = $_POST['category'];
-   $description = $_POST['description'];
-   $pricebefore = $_POST['pricebefore'];
-   $priceafter = $_POST['priceafter'];
-   $offerexp = $_POST['offerexp'];
-   $storelocation = $_POST['storelocation'];
-	  echo $brand; 
-	  echo "ppppppppppppppppp";
-	$x=true;
-	$row=$collection->find();
-	foreach($row as $res)
-	{
-		if($res['storelocation']==$storelocation && $res['brand']==$brand && $res['product']==$product)
-		$x=false;
-	}
-	if($x)
-	{
-		 $query = array("brand"=>"$brand","product"=>"$product","category"=>"$category","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation");
-		 $collection->insert($query);
-		 echo'insert success';			
-		 //header('Location: index.php');
-		
-	}
-	else
-	{
-		echo"Adv already exist";		
-	}
- }
-else
-{
-	echo"Enter All * Parameters";
-}
-
-
 	// This file demonstrates file upload to an S3 bucket. This is for using file upload via a
 	// file compared to just having the link. If you are doing it via link, refer to this:
 	// https://gist.github.com/keithweaver/08c1ab13b0cc47d0b8528f4bc318b49a
@@ -113,5 +66,48 @@ else
 	// Now that you have it working, I recommend adding some checks on the files.
 	// Example: Max size, allowed file types, etc.
 
+// connect to mongodb
+   $m = new MongoClient();
+   // select a database
+   $db = $m->dealhunter;
+   $collection = $db->coupons;
+echo $pathInS3;
+echo "hhhhhhhhhhhhhhhh";
+if( !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
+ { 
+   $brand = $_POST['brand'];
+   $product = $_POST['product'];
+   $category = $_POST['category'];
+   $description = $_POST['description'];
+   $pricebefore = $_POST['pricebefore'];
+   $priceafter = $_POST['priceafter'];
+   $offerexp = $_POST['offerexp'];
+   $storelocation = $_POST['storelocation'];
+	  echo $brand; 
+	  echo "ppppppppppppppppp";
+	$x=true;
+	$row=$collection->find();
+	foreach($row as $res)
+	{
+		if($res['storelocation']==$storelocation && $res['brand']==$brand && $res['product']==$product)
+		$x=false;
+	}
+	if($x)
+	{
+		 $query = array("brand"=>"$brand","product"=>"$product","category"=>"$category","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation");
+		 $collection->insert($query);
+		 echo'insert success';			
+		 //header('Location: index.php');
+		
+	}
+	else
+	{
+		echo"Adv already exist";		
+	}
+ }
+else
+{
+	echo"Enter All * Parameters";
+}
 
 ?>  

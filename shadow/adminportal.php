@@ -90,14 +90,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" name="brand" placeholder="Brand Name" required=" ">
 					<input type="text" name="product" placeholder="Product Name" required=" ">
 					
-						<input name="category"><li>
+						<input name="category">
 							<option selected="selected">Select categary</option>
 							<option value="mobile">Mobile</option>
 							<option value="television">Television</option>
 							<option value="camera">Camera</option>
 							<option value="networking">Networking</option>
 							<option value="homeappliances">Home Appliances</option>
-							<option value="grocery">Grocery</option></li>
+							<option value="grocery">Grocery</option>
 						</input><br>
 					<input type="text" name="description" placeholder="Description" required=" ">
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">

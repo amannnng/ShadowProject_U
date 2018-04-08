@@ -280,7 +280,7 @@ echo $date;
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="60%" width="60%" /></a>		
+											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="40px" width="40px" /></a>		
 											<p>'.$res["brand"].'</p>
 											<h4>'.$res["priceafter"].'<span>'.$res["pricebefore"].'</span></h4>
 										</div>

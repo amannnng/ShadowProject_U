@@ -48,6 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
+<?php include_once("analyticstracking.php") ?>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">

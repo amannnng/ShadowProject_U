@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" "><br>
 					<a>Select image:</a>
-					<input type="file" name="fileToUpload" id="fileToUpload">
+					<input type="file" name="imgurl" id="fileToUpload">
 					<br>
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>
@@ -123,7 +123,7 @@ if($_SERVER['REQUEST_METHOD']=="POST")
    // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
+if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['imgurl']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
  { 
    $imgurl = $_POST['imgurl'];
    $brand = $_POST['brand'];

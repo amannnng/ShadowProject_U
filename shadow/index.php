@@ -233,7 +233,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-echo 'e1';
+
 echo'<div align="center">
 <table border="1" id="table" align="center">
 <tr>

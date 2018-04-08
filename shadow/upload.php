@@ -19,7 +19,7 @@
 	use Aws\S3\S3Client;
 	use Aws\S3\Exception\S3Exception;
 	// AWS Info
-	$bucketName = 'S3Bucketsalehunter';
+	$bucketName = 'salehunter';
 	$IAM_KEY = 'AKIAILOI2QRDOMGHCDAA';
 	$IAM_SECRET = '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';
 	// Connect to AWS

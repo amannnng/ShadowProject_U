@@ -89,21 +89,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 					<input type="text" name="brand" placeholder="Brand Name" required=" ">
 					<input type="text" name="product" placeholder="Product Name" required=" ">
-					<input type="text" name="category" placeholder="Category" required=" ">					
+					<input type="text" name="category" placeholder="Category" required=" ">	
+						<select name="category">
+							<option selected="selected">Select categary</option>
+							<option value="mobile">Mobile</option>
+							<option value="television">Television</option>
+							<option value="camera">Camera</option>
+							<option value="networking">Networking</option>
+							<option value="homeappliances">Home Appliances</option>
+							<option value="grocery">Grocery</option>
+						</select>
 					<input type="text" name="description" placeholder="Description" required=" ">
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" ">
-						<form action="upload.php" method="post" enctype="multipart/form-data">
-							<input type="file" name="fileToUpload" id="fileToUpload">
-							<input type="submit" value="Upload Image" name="submit">
-							</form>	
+					<input type="file" name="fileToUpload" id="fileToUpload">
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>
 							<option value="HEB">Heb</option>
 							<option value="Bestbuy">Best Buy</option>
 							<option value="Walmart">Walmart</option>
-
 						</select>
 <?php
 if($_SERVER['REQUEST_METHOD']=="POST")

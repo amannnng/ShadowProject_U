@@ -73,7 +73,7 @@
    $collection = $db->coupons;
 echo $pathInS3;
 if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
- { echo 'hhhhhhhhhhhhhhhh';
+ { echo "hhhhhhhhhhhhhhhh";
    $brand = $_POST['brand'];
    $product = $_POST['product'];
    $category = $_POST['category'];
@@ -83,7 +83,7 @@ if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product
    $offerexp = $_POST['offerexp'];
    $storelocation = $_POST['storelocation'];
 	  echo $brand; 
-	  echo 'ppppppppppppppppp';
+	  echo "ppppppppppppppppp";
 	$x=true;
 	$row=$collection->find();
 	foreach($row as $res)

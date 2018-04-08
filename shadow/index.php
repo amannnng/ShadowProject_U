@@ -234,15 +234,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-
+	$product = $_POST['product'];
+	$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product))));
 echo'<div align="center">
 <table border="1" id="table" align="center">
 <tr>
 <td><h2>Brand</h2></td><td><h2>product</h2></td><td><h2>description</h2></td><td><h2>category</h2></td><td><h2>price before</h2></td><td><h2>price after</h2></td><td><h2>exp</h2></td><td><h2>store</h2></td><td><h2>img</h2></td>
 </tr>';
 	
-	$product = $_POST['product'];
-	$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product))));
 	//$row=$collection->find(array("brand"=>$product,"product"=>$product));
 //echo $date;
 	foreach($row as $res)

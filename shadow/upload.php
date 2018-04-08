@@ -19,9 +19,10 @@
 	use Aws\S3\S3Client;
 	use Aws\S3\Exception\S3Exception;
 	// AWS Info
-	$bucketName = 'salehunteronline';
-	$IAM_KEY = 'AKIAILOI2QRDOMGHCDAA';
-	$IAM_SECRET = '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';
+	$awsinfo = include('../../config.php');
+	$bucketName = $database['bucketName'];
+	$IAM_KEY = $database['IAM_KEY'];
+	$IAM_SECRET = $database['IAM_SECRET'];
 	// Connect to AWS
 	try {
 		// You may need to change the region. It will say in the URL when the bucket is open
@@ -44,7 +45,7 @@
 	
 	// For this, I would generate a unqiue random string for the key name. But you can do whatever.
 	$keyName = 'test_example/' . basename($_FILES["fileToUpload"]['tmp_name']);
-	$pathInS3 = 'https://s3.us-east-2.amazonaws.com/' . $bucketName . '/' . $keyName;
+	$x = 'https://s3.us-east-2.amazonaws.com/' . $bucketName . '/' . $keyName;
 	// Add it to S3
 	try {
 		// Uploaded:

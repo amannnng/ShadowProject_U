@@ -98,12 +98,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<option value="networking">Networking</option>
 							<option value="homeappliances">Home Appliances</option>
 							<option value="grocery">Grocery</option>
-						</select>
+						</select><br>
 					<input type="text" name="description" placeholder="Description" required=" ">
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" ">
 					<input type="file" name="fileToUpload" id="fileToUpload">
+					<br>
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>
 							<option value="HEB">Heb</option>

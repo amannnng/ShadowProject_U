@@ -215,7 +215,7 @@ echo'<div align="center">
 				</div>';
 				
 			}echo'	
-				<div class="clearfix"> <input type="button" href="index.php" class="button" /> </div>
+				<div class="clearfix"> <button value="Go Back" href="index.php" class="button" /> </div>
 			</div>
 		</div>
 	</div>';

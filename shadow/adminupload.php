@@ -62,12 +62,10 @@
 	} catch (Exception $e) {
 		die('Error:' . $e->getMessage());
 	}
-	header('Location: adminportal.php');
+	//header('Location: adminportal.php');
 	// Now that you have it working, I recommend adding some checks on the files.
 	// Example: Max size, allowed file types, etc.
 
-if($_SERVER['REQUEST_METHOD']=="POST")
-{
 // connect to mongodb
    $m = new MongoClient();
    // select a database
@@ -109,5 +107,5 @@ else
 {
 	echo"Enter All * Parameters";
 }
-}
+
 ?>  

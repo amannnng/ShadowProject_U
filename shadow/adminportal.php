@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" "><br>
 					<a>Select image:</a>
-					<input type="file" name="imgurl" id="fileToUpload">
+					<input type="text" name="imgurl" placeholder="Price After" required=" ">
 					<br>
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>

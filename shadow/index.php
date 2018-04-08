@@ -233,7 +233,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
-echo '1';   // select a database
+// select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
 

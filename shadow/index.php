@@ -227,8 +227,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </script>
 			<!-- //flexSlider -->
 		</div>
-		<div class="clearfix">
-		</div>
 	</div>
 <?php
 
@@ -239,32 +237,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    $db = $m->dealhunter;
    $collection = $db->coupons;
 
-echo'<div align="center">
-<table border="1" id="table" align="center">
-<tr>
-<td><h2>Brand</h2></td><td><h2>product</h2></td><td><h2>description</h2></td><td><h2>category</h2></td><td><h2>price before</h2></td><td><h2>price after</h2></td><td><h2>exp</h2></td><td><h2>store</h2></td><td><h2>img</h2></td>
-</tr>';
+
 	$row=$collection->find();
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	
 //echo $date;
-	foreach($row as $res)
-	{
-
-		if($res['offerexp']>$date)
-
-		echo'<tr>
-			<td>'.$res["brand"].'</td><td>'.$res["product"].'</td><td>'.$res["description"].'</td><td>'.$res["category"].'</td><td>'.$res["pricebefore"].'</td><td>'.$res["priceafter"].'</td><td>'.$res["offerexp"].'</td><td>'.$res["storelocation"].'</td>
-
-			</tr>';
-		
-	}
 	
-	
-	echo'</table></div>';
-
-
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">

@@ -83,6 +83,7 @@ if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product
    $offerexp = $_POST['offerexp'];
    $storelocation = $_POST['storelocation'];
 	  echo $brand; 
+	  echo '1';
 	$x=true;
 	$row=$collection->find();
 	foreach($row as $res)

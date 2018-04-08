@@ -94,7 +94,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" ">
-					<input type="text" name="imgurl" placeholder="Image Url" required=" ">
+						<form action="upload.php" method="post" enctype="multipart/form-data">
+							<input type="file" name="fileToUpload" id="fileToUpload">
+							<input type="submit" value="Upload Image" name="submit">
+							</form>	
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>
 							<option value="HEB">Heb</option>

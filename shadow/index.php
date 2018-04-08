@@ -253,7 +253,7 @@ echo $date;
 		if($res['offerexp']>$date)
 
 		echo'<tr>
-			<td>'.$res["brand"].'</td><td>'.$res["product"].'</td><td>'.$res["description"].'</td><td>'.$res["category"].'</td><td>'.$res["pricebefore"].'</td><td>'.$res["priceafter"].'</td><td>'.$res["offerexp"].'</td><td>'.$res["storelocation"].'</td><td><img title=" " alt=" " src="'.$res["imgurl"].'" /></td>
+			<td>'.$res["brand"].'</td><td>'.$res["product"].'</td><td>'.$res["description"].'</td><td>'.$res["category"].'</td><td>'.$res["pricebefore"].'</td><td>'.$res["priceafter"].'</td><td>'.$res["offerexp"].'</td><td>'.$res["storelocation"].'</td>
 
 			</tr>';
 		
@@ -280,7 +280,7 @@ echo $date;
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="30" width="30" /></a>		
+											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="30%" width="30%" /></a>		
 											<p>'.$res["brand"].'</p>
 											<h4>'.$res["priceafter"].'<span>'.$res["pricebefore"].'</span></h4>
 										</div>

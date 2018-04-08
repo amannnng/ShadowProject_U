@@ -229,7 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	</div>
 <?php
-echo 'hi';
+
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
@@ -246,7 +246,7 @@ echo'<div align="center">
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	
-echo $date;
+//echo $date;
 	foreach($row as $res)
 	{
 

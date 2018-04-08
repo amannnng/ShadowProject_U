@@ -48,10 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<a href="products.html">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+			<form action="search.php" method="post">
+				<input type="text" name="product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
 				<input type="submit" value=" ">
 			</form>
+	
 		</div>
 		<div class="product_list_header">  
 			<form action="#" method="post" class="last">
@@ -229,24 +230,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	</div>
 <?php
-echo 'hi';
+
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
-echo '1';   // select a database
+// select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
 
 echo'<div align="center">
 <table border="1" id="table" align="center">
 <tr>
-<td><h2>Brand</h2></td><td><h2>product</h2></td><td><h2>description</h2></td><td><h2>category</h2></td><td><h2>price before</h2></td><td><h2>price after</h2></td><td><h2>exp</h2></td><td><h2>store</h2></td><td></td>
+<td><h2>Brand</h2></td><td><h2>product</h2></td><td><h2>description</h2></td><td><h2>category</h2></td><td><h2>price before</h2></td><td><h2>price after</h2></td><td><h2>exp</h2></td><td><h2>store</h2></td><td><h2>img</h2></td>
 </tr>';
 	$row=$collection->find();
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	
-echo $date;
+//echo $date;
 	foreach($row as $res)
 	{
 
@@ -280,7 +281,7 @@ echo $date;
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/1.png" /></a>		
+											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="40px" width="40px" /></a>		
 											<p>'.$res["brand"].'</p>
 											<h4>'.$res["priceafter"].'<span>'.$res["pricebefore"].'</span></h4>
 										</div>

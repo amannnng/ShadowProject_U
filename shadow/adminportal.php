@@ -107,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="upload.php" method="post" enctype="multipart/form-data">
 						Select image to upload:
 						<input type="file" name="fileToUpload" id="fileToUpload">
-						<input type="submit" value="Upload Image" name="submit">
+					<!--	<input type="submit" value="Upload Image" name="submit">-->
 					</form>
 					<!--<input type="text" name="imgurl" placeholder="Price After" required=" ">-->
 					<br>

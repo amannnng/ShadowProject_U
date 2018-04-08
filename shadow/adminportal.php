@@ -86,12 +86,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				   <div class="form">
 					<h2>Add Products</h2>
-					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 					<form action="upload.php" method="post" enctype="multipart/form-data">
 						Select image to upload:
 						<input type="file" name="fileToUpload" id="fileToUpload">
-					<!--	<input type="submit" value="Upload Image" name="submit">-->
+						<input type="submit" value="Upload Image" name="submit">
 					</form>
+					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 					<input type="text" name="brand" placeholder="Brand Name" required=" ">
 					<input type="text" name="product" placeholder="Product Name" required=" ">
 						<select name="category">

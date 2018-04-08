@@ -6,8 +6,8 @@ files:
 permissions:
    - object: /var/www/html
      pattern: "**"
-     owner: apache2
-     group: apache2
+     owner: www-data
+     group: www-data
      mode: 755
      type:
        - file
@@ -15,4 +15,4 @@ hooks:
    AfterInstall:
     - location: scripts/restartapache.sh
       timeout: 300
-      runas: www-data
+      runas: root

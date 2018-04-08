@@ -71,6 +71,7 @@
    // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
+
 if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
  { 
    

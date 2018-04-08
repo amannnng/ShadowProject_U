@@ -164,8 +164,8 @@ else
 {
 	echo"Enter All * Parameters";
 }
-}
-?>*/  
+}*/
+?>  
 					<input type="submit" name="submit "value="Add">
 					</form>
 				  </div>

@@ -253,7 +253,7 @@ echo $date;
 		if($res['offerexp']>$date)
 
 		echo'<tr>
-			<td>'.$res["brand"].'</td><td>'.$res["product"].'</td><td>'.$res["description"].'</td><td>'.$res["category"].'</td><td>'.$res["pricebefore"].'</td><td>'.$res["priceafter"].'</td><td>'.$res["offerexp"].'</td><td>'.$res["storelocation"].'</td><td>'.$res["imgurl"].'</td>
+			<td>'.$res["brand"].'</td><td>'.$res["product"].'</td><td>'.$res["description"].'</td><td>'.$res["category"].'</td><td>'.$res["pricebefore"].'</td><td>'.$res["priceafter"].'</td><td>'.$res["offerexp"].'</td><td>'.$res["storelocation"].'</td><td><img title=" " alt=" " src="'.$res["imgurl"].'" /></td>
 
 			</tr>';
 		

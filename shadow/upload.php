@@ -20,9 +20,6 @@
 	use Aws\S3\Exception\S3Exception;
 	// AWS Info
 	$awsinfo = include('../../config.php');
-	echo($awsinfo['bucketName']);
-	echo($awsinfo['IAM_KEY']);
-	echo($awsinfo['IAM_SECRET']);
 	$bucketName = $awsinfo['bucketName'];
 	$IAM_KEY = $awsinfo['IAM_KEY'];
 	$IAM_SECRET = $awsinfo['IAM_SECRET'];
@@ -46,7 +43,7 @@
 		die("Error: " . $e->getMessage());
 	}
 	// For this, I would generate a unqiue random string for the key name. But you can do whatever.
-	$keyName = 'test_example/' . basename($_FILES["fileToUpload"]['tmp_name']);
+	$keyName = 'Promotions/' . basename($_FILES["fileToUpload"]['name']);
 	$pathInS3 = 'https://s3.us-east-2.amazonaws.com/' . $bucketName . '/' . $keyName;
 	// Add it to S3
 	try {

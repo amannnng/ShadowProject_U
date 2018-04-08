@@ -97,7 +97,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<option value="networking">Networking</option>
 							<option value="homeappliances">Home Appliances</option>
 							<option value="grocery">Grocery</option>
-						</select><br>
+						</select>
+						<br>
+						<br>
 					<input type="text" name="description" placeholder="Description" required=" ">
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
@@ -111,6 +113,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<option value="Bestbuy">Best Buy</option>
 							<option value="Walmart">Walmart</option>
 						</select>
+						<br>
+						<br>
 <?php
 if($_SERVER['REQUEST_METHOD']=="POST")
 {

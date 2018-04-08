@@ -136,26 +136,6 @@ echo'<div align="center">
 			</div>
 		</div>
 	</div>';
-
-if(!empty($_POST['product']))
-{
-	$product = $_POST['product'];
-	
-	$row=$collection->find(array("product"=>$product));
-	foreach($row as $res)
-	{
-		
-	}
-	
-	else
-	{
-		echo"No Coupon Found";
-	}
-}
-else
-{
-echo"Enter All * Parameters";
-}
 ?>
 		</div>
 		<div class="product_list_header">  

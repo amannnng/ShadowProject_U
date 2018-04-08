@@ -20,9 +20,10 @@
 	use Aws\S3\Exception\S3Exception;
 	// AWS Info
 	$awsinfo = include('../../config.php');
-	$bucketName = $database['bucketName'];
-	$IAM_KEY = $database['IAM_KEY'];
-	$IAM_SECRET = $database['IAM_SECRET'];
+	echo($awsinfo['bucketName']);
+	$bucketName = $awsinfo['bucketName'];
+	$IAM_KEY = $awsinfo['IAM_KEY'];
+	$IAM_SECRET = $awsinfo['IAM_SECRET'];
 	// Connect to AWS
 	try {
 		// You may need to change the region. It will say in the URL when the bucket is open

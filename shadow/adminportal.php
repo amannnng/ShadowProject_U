@@ -89,10 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="adminupload.php" method="post" enctype="multipart/form-data">
 						Select image to upload:
 						<input type="file" name="fileToUpload" id="fileToUpload">
-				<!--		<input type="submit" value="Upload Image" name="submit">
-					</form>
-					<form action="<?php /*$_SERVER['PHP_SELF']; */?>" method="post"> -->
-					<input type="text" name="brand" placeholder="Brand Name" required=" ">
+						<input type="text" name="brand" placeholder="Brand Name" required=" ">
 					<input type="text" name="product" placeholder="Product Name" required=" ">
 						<select name="category">
 							<option selected="selected">Select categary</option>
@@ -110,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" "><br>
 					
-					<!--<input type="text" name="imgurl" placeholder="Price After" required=" ">-->
+					
 					<br>
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>

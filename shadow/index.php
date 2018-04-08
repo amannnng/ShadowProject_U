@@ -243,22 +243,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	$date=new MongoDate();
 	
 //echo $date;
-	foreach($row as $res)
-	{
-
-		if($res['offerexp']>$date)
-
-		echo'<tr>
-			<td>'.$res["brand"].'</td><td>'.$res["product"].'</td><td>'.$res["description"].'</td><td>'.$res["category"].'</td><td>'.$res["pricebefore"].'</td><td>'.$res["priceafter"].'</td><td>'.$res["offerexp"].'</td><td>'.$res["storelocation"].'</td>
-
-			</tr>';
-		
-	}
 	
-	
-	echo'</table></div>';
-
-
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">

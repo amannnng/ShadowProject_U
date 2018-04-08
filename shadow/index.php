@@ -243,12 +243,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	$date=new MongoDate();
 	
 //echo $date;
-	
+	echo'<div align="center"></div>';
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container"><br>
-			<h3>............................Hot Offers</h3>
+			<h3>Hot Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{

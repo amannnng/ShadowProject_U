@@ -228,9 +228,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	</div>
 <?php
+echo 'hi';
 // connect to mongodb
    $m = new MongoClient();
-   // select a database
+echo '1';   // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
 

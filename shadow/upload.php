@@ -54,7 +54,7 @@
 				'Bucket'=>$bucketName,
 				'Key' =>  $keyName,
 				'SourceFile' => $file,
-				//'StorageClass' => 'REDUCED_REDUNDANCY',
+				'StorageClass' => 'REDUCED_REDUNDANCY',
 				'ACL' => 'public-read'
 			)
 		);

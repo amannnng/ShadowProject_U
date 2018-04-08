@@ -43,13 +43,14 @@
 		die("Error: " . $e->getMessage());
 	}
 	
-	// For this, I would generate a unqiue random string for the key name. But you can do whatever.
-	$keyName = 'test_example/' . basename($_FILES["fileToUpload"]['tmp_name']);
-	$x = 'https://s3.us-east-2.amazonaws.com/' . $bucketName . '/' . $keyName;
+	
 	// Add it to S3
 	try {
 		// Uploaded:
-		$file = $_FILES["fileToUpload"]['tmp_name'];
+		// For this, I would generate a unqiue random string for the key name. But you can do whatever.
+		$keyName = 'Category' . basename($_FILES["fileToUpload"]["name"]);
+		$x = 'https://s3.us-east-2.amazonaws.com/' . $bucketName . '/' . $keyName;
+		$file = $_FILES["fileToUpload"]["name"];
 		$s3->putObject(
 			array(
 				'Bucket'=>$bucketName,

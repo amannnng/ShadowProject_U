@@ -147,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
-						<li><a href="navsearch.php" method="post" name="category" value="electronics">Electronics</a></li>
+						<li><a href="navsearch.php?value=electronics">Electronics</a></li>
 						<li><a  href="navsearch.php" name="subcategory" value="mobile">Mobile</a></li>
 						<li><a href="kitchen.php">Television</a></li>
 						<li><a href="short-codes.php">Laptop</a></li>

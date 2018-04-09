@@ -56,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Go Back To Home</a>
+			<a href="index.php">Go Back To Home</a>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">

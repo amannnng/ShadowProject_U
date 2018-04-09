@@ -262,8 +262,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
 											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
-											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
-											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>$
+											<h4>'.$res["priceafter"].'<span>'.$res["pricebefore"].'</span></h4></p>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">

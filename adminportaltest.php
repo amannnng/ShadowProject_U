@@ -98,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </div>
 				   <div class="form">
 					<h2>Add Products</h2>
-					<form action="adminupload.php" method="post" enctype="multipart/form-data">
+					<form action="adminuploadadvanced.php" method="post" enctype="multipart/form-data">
 						<input type="text" name="brand" placeholder="Brand Name" required=" ">
 						<input type="text" name="product" placeholder="Product Name" required=" ">
 						<select name="category">

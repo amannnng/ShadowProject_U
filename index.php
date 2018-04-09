@@ -106,7 +106,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<p>...Get Great Deals on Electronics, Home Appliances, Grocessry... </p>
+					<p>Get Great Deals on Electronics, Home Appliances, Grocessry </p>
 					
 				</ul>
 			</div>

@@ -4,9 +4,10 @@
    // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-
+echo '1';
 if(!empty($_POST['subcategory']) || !empty($_POST['category']))
  { 
+echo'2';
    $category = $_POST['category'];
    $subcategory = $_POST['subcategory'];
  

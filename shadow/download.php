@@ -7,7 +7,8 @@
   use Aws\S3\S3Client;
   use Aws\S3\Exception\S3Exception;
   // Get the access code
-  $accessCode = $_GET['c'];
+  //$accessCode = $_GET['c'];
+  $accessCode = "https://s3.us-east-2.amazonaws.com/salehunteronline/Promotions/WIN_20160302_072340.JPG";
 	//$accessCode = strtoupper($accessCode);
   //$accessCode = trim($accessCode);
   //$accessCode = addslashes($accessCode);

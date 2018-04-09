@@ -12,7 +12,7 @@
   //$accessCode = trim($accessCode);
   //$accessCode = addslashes($accessCode);
   //$accessCode = htmlspecialchars($accessCode);
-  //$keyPath = $accessCode;
+  $keyPath = $accessCode;
   
   try {
     $s3 = S3Client::factory(

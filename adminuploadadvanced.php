@@ -117,7 +117,8 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 	{
 		
 		// Open the file to get existing content
-		$current = file_get_contents($detailPageLocation);
+		$newFile = fopen($detailPageLocation, "w")
+		//$current = file_get_contents($detailPageLocation);
 		// Append a new person to the file
 		$current .= "<!doctype html><html>
 <head><meta charset='utf-8'>
@@ -140,7 +141,9 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 </html>
 ";
 		// Write the contents back to the file
-		file_put_contents($detailPageLocation, $current);
+		fwrite($newFile, $current);
+		fclose($newFile);
+		//file_put_contents($detailPageLocation, $current);
 	}
 
 ?>  

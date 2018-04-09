@@ -1,6 +1,6 @@
 <?php
   $awsinfo = include('../../config.php');
-	$bucketName = $awsinfo['bucketName'];
+	$BUCKET_NAME = $awsinfo['bucketName'];
 	$IAM_KEY = $awsinfo['IAM_KEY'];
 	$IAM_SECRET = $awsinfo['IAM_SECRET'];
   require 'vendor/autoload.php';

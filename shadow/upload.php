@@ -63,7 +63,7 @@
 	} catch (Exception $e) {
 		die('Error:' . $e->getMessage());
 	}
-	echo "Done:  "$file;
+	echo "Done:  ";
 	//header('Location: adminportal.php');
 	// Now that you have it working, I recommend adding some checks on the files.
 	// Example: Max size, allowed file types, etc.

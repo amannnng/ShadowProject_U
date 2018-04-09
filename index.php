@@ -146,14 +146,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.php">Electronics</a></li>
-						<li><a href="household.php">Mobile</a></li>
+					
+						<li><a action="navsearch.php" name="category" value="electronics">Electronics</a></li>
+						<li><a  action="navsearch.php" name="subcategory" value="mobile">Mobile</a></li>
 						<li><a href="kitchen.php">Television</a></li>
 						<li><a href="short-codes.php">Laptop</a></li>
 						<li><a href="pet.php">Home</a></li>
 						<li><a href="pet.php">Home Appliances</a></li>
 						<li><a href="bread.php">Kitchen</a></li>
 						<li><a href="bread.php">Decor</a></li>
+					
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>

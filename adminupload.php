@@ -74,11 +74,12 @@
    $db = $m->dealhunter;
    $collection = $db->coupons;
 
-if(!empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
+if(!empty($_POST['subcategory']) &&!empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
  { 
    $brand = $_POST['brand'];
    $product = $_POST['product'];
    $category = $_POST['category'];
+   $subcategory = $_POST['subcategory'];
    $description = $_POST['description'];
    $pricebefore = $_POST['pricebefore'];
    $priceafter = $_POST['priceafter'];
@@ -93,7 +94,7 @@ if(!empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['catego
 	}
 	if($x)
 	{
-		 $query = array("imgurl"=>"$pathInS3","brand"=>"$brand","product"=>"$product","category"=>"$category","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation");
+		 $query = array("imgurl"=>"$pathInS3","brand"=>"$brand","product"=>"$product","category"=>"$category","subcategory"=>"$subcategory","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation");
 		 $collection->insert($query);
 		 echo'insert success';			
 		 //header('Location: index.php');

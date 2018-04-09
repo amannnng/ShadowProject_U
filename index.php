@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
-				<input type="text" name="product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="text" name="product" value="Search a deal..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a deal...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 	

@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </div>
 
 				 
-				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				  <div class="cta"></div>
 				</div>
 			</div>
 			<script>

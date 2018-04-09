@@ -5,7 +5,7 @@
    $db = $m->dealhunter;
    $collection = $db->coupons;
 echo '1';
-$value = $_GET['value'];
+$value = $_POST['value'];
 echo $value;
 if(!empty($_POST['subcategory']) || !empty($_POST['category']))
  { 

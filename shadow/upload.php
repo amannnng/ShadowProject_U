@@ -55,7 +55,7 @@
 				'Key' =>  $keyName,
 				'SourceFile' => $file,
 				'StorageClass' => 'REDUCED_REDUNDANCY',
-				'ACL' => 'public-read-write'
+				//'ACL' => 'public-read-write'
 			)
 		);
 	} catch (S3Exception $e) {
@@ -63,7 +63,8 @@
 	} catch (Exception $e) {
 		die('Error:' . $e->getMessage());
 	}
-	header('Location: adminportal.php');
+	echo "Done:  ";
+	//header('Location: adminportal.php');
 	// Now that you have it working, I recommend adding some checks on the files.
 	// Example: Max size, allowed file types, etc.
 ?>

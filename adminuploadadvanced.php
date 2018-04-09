@@ -127,9 +127,14 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 	
 
 
-	<a href=".$pathInS3."><img alt=" " src='".$pathInS3."' height=""150px"" width=""150px""/></a>		
-											<p>".$brand."</p><p>".$product."</p><p>".$description."</p><p>".$storelocation."</p>
-											<h4>$".$pricebefore."<span>$".$priceafter."</span></h4>
+	<a href=".$pathInS3.">
+		<img src=".$pathInS3." height=""150px"" width=""150px""/>
+	</a>		
+	<p>".$brand."</p>
+	<p>".$product."</p>
+	<p>".$description."</p>
+	<p>".$storelocation."</p>
+	<h4>$".$pricebefore."<span>$".$priceafter."</span></h4>
 	
 	</body>
 </html>

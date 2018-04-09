@@ -56,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
+			<a href="products.html">Go Back To Home</a>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
@@ -147,14 +147,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
-						<li><a href="navsearch.php?value=electronics">Electronics</a></li>
-						<li><a  href="navsearch.php?value=mobile">Mobile</a></li>
-						<li><a href="navsearch.php?value=television">Television</a></li>
-						<li><a href="navsearch.php?value=laptop">Laptop</a></li>
-						<li><a href="navsearch.php?value=home">Home</a></li>
-						<li><a href="navsearch.php?value=homeappliance">Home Appliances</a></li>
-						<li><a href="navsearch.php?value=kitchen">Kitchen</a></li>
-						<li><a href="navsearch.php?value=decor">Decor</a></li>
+						<li><a href="navlist.php?value=electronics">Electronics</a></li>
+						<li><a  href="navlist.php?value=mobile">Mobile</a></li>
+						<li><a href="navlist.php?value=television">Television</a></li>
+						<li><a href="navlist.php?value=laptop">Laptop</a></li>
+						<li><a href="navlist.php?value=home">Home</a></li>
+						<li><a href="navlist.php?value=homeappliance">Home Appliances</a></li>
+						<li><a href="navlist.php?value=kitchen">Kitchen</a></li>
+						<li><a href="navlist.php?value=decor">Decor</a></li>
 					
 					</ul>
 				 </div><!-- /.navbar-collapse -->

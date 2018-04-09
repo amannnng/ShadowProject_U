@@ -5,22 +5,17 @@
    $db = $m->dealhunter;
    $collection = $db->coupons;
 echo '1';
-$value = $_POST['value'];
+
 echo $value;
-if(!empty($_POST['subcategory']) || !empty($_POST['category']))
+if(!empty($_GET['value']))
  { 
 echo'2';
-   $category = $_POST['category'];
-   $subcategory = $_POST['subcategory'];
- 
-	  $x=true;
+   $value = $_GET['value'];
 	$row=$collection->find();
 	
 echo'<div align="center">';
 
-	
-	$product = $_POST['product'];
-	$row = $collection->find(array('$or' => array(array("category" =>$category),array("subcategory" =>$subcatogary))));
+	$row = $collection->find(array('$or' => array(array("category" =>$value),array("subcategory" =>$value))));
 	//$row=$collection->find(array("brand"=>$product,"product"=>$product));
 //echo $date;
 		

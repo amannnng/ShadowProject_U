@@ -33,7 +33,7 @@
     ));
     // Display it in the browser
     header("Content-Type: {$result['ContentType']}");
-    //header('Content-Disposition: filename="' . basename($keyPath) . '"');
+    header('Content-Disposition: filename="' . basename($keyPath) . '"');
     echo $result['Body'];
   } catch (Exception $e) {
     die("Error: " . $e->getMessage());

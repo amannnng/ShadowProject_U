@@ -148,13 +148,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<ul class="nav navbar-nav nav_1">
 					
 						<li><a href="navsearch.php?value=electronics">Electronics</a></li>
-						<li><a  href="navsearch.php" name="subcategory" value="mobile">Mobile</a></li>
-						<li><a href="kitchen.php">Television</a></li>
-						<li><a href="short-codes.php">Laptop</a></li>
-						<li><a href="pet.php">Home</a></li>
-						<li><a href="pet.php">Home Appliances</a></li>
-						<li><a href="bread.php">Kitchen</a></li>
-						<li><a href="bread.php">Decor</a></li>
+						<li><a  href="navsearch.php?value=mobile">Mobile</a></li>
+						<li><a href="navsearch.php?value=television">Television</a></li>
+						<li><a href="navsearch.php?value=laptop">Laptop</a></li>
+						<li><a href="navsearch.php?value=home">Home</a></li>
+						<li><a href="navsearch.php?value=homeappliance">Home Appliances</a></li>
+						<li><a href="navsearch.php?value=kitchen">Kitchen</a></li>
+						<li><a href="navsearch.php?value=decor">Decor</a></li>
 					
 					</ul>
 				 </div><!-- /.navbar-collapse -->

@@ -113,6 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<option value="laptop">Laptop</option>
 							<option value="furniture">Furniture</option>
 							<option value="kitchen">Kitchen</option>
+							<option value="homeappliance">Home Appliance</option>
 							<option value="decor">Decor</option>
 						</select>
 						<br>

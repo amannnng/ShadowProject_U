@@ -4,12 +4,9 @@
    // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-echo '1';
 
-echo $value;
 if(!empty($_GET['value']))
  { 
-echo'2';
    $value = $_GET['value'];
 	$row=$collection->find();
 	

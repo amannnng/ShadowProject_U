@@ -120,16 +120,13 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 		$newFile = fopen($detailPageLocation, "w")
 		//$current = file_get_contents($detailPageLocation);
 		// Append a new person to the file
-		$current = "<!doctype html><html>
+		$fileContent = "<!doctype html><html>
 <head><meta charset='utf-8'>
 	<title>".$product."</title>
 </head>
 	<body>
-	
-
-
 	<a href=".$pathInS3.">
-		<img src=".$pathInS3." />
+	<img src=".$pathInS3." />
 	</a>		
 	<p>".$brand."</p>
 	<p>".$product."</p>
@@ -141,7 +138,7 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 </html>
 ";
 		// Write the contents back to the file
-		fwrite($newFile, $current);
+		fwrite($newFile, $fileContent);
 		fclose($newFile);
 		//file_put_contents($detailPageLocation, $current);
 	}

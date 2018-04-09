@@ -144,6 +144,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				 
 				  <div class="cta"></div>
+				
+				
+				
 				</div>
 			</div>
 			<script>
@@ -162,7 +165,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 <!-- //login -->
 		</div>
-		<div class="clearfix"></div>
+		<div class="clearfix">
+		<?php
+
+// connect to mongodb
+//$m = new \MongoDB\Driver\Manager();
+  $m = new MongoClient();
+// select a database
+   $db = $m->dealhunter;
+   $collection = $db->coupons;
+
+
+	$row=$collection->find();
+	//$date1=new MongoDate(strtotime($offerexp));
+	$date=new MongoDate();
+	
+//echo $date;
+	echo'<div align="center"></div>';
+	echo '
+<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3> Offers</h3>
+			<div class="agile_top_brands_grids">';
+			foreach($row as $res)
+			{
+				echo'
+				<div class="col-md-3 top_brand_left">
+					<div class="hover14 column">
+						<div class="agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block" >
+										<div class="snipcart-thumb">
+											<a href="'.$res["imgurl"].'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
+											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
+											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+										</div>
+										<div class="snipcart-details top_brand_home_details">
+											<form action="delete.php" method="post">
+												<input type="submit" name="submit" value="Save for Later" class="button" />													
+											</form>
+									
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>';
+				
+			}echo'	
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>';
+?>
+		</div>
 	</div>
 	<div class="footer">
 		

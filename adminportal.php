@@ -91,12 +91,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="text" name="product" placeholder="Product Name" required=" ">
 						<select name="category">
 							<option selected="selected">Select categary</option>
+							<option value="electronics">Electronics</option>
+							<option value="home">Home</option>
+						</select>
+						<select name="subcategory">
+							<option selected="selected">Select categary</option>
 							<option value="mobile">Mobile</option>
 							<option value="television">Television</option>
-							<option value="camera">Camera</option>
-							<option value="networking">Networking</option>
-							<option value="homeappliances">Home Appliances</option>
-							<option value="grocery">Grocery</option>
+							<option value="laptop">Laptop</option>
+							<option value="furniture">Furniture</option>
+							<option value="kitchen">Kitchen</option>
+							<option value="decor">Decor</option>
 						</select>
 						<br>
 						<br>

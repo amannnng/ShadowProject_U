@@ -55,7 +55,7 @@
 				'Key' =>  $keyName,
 				'SourceFile' => $file,
 				'StorageClass' => 'REDUCED_REDUNDANCY',
-				'ACL' => 'public-read-write'
+				//'ACL' => 'public-read-write'
 			)
 		);
 	} catch (S3Exception $e) {

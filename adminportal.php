@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</select>
 						<br>
 						<br>
-						<font color="grey">Select image to upload:</font>
+						<font size = "2" color="grey">Select image to upload:</font>
 						<br>
 						<br>
 						<input type="file" name="fileToUpload" id="fileToUpload">

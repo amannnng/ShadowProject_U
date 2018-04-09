@@ -114,8 +114,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<option value="Walmart">Walmart</option>
 						</select>
 						<br>
-						
+						<br>
 						Select image to upload:
+						<br>
 						<br>
 						<input type="file" name="fileToUpload" id="fileToUpload">
 						<br>

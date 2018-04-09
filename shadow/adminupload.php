@@ -53,8 +53,10 @@
 			array(
 				'Bucket'=>$bucketName,
 				'Key' =>  $keyName,
-				'SourceFile' => $file,
-				'StorageClass' => 'REDUCED_REDUNDANCY'
+				//'SourceFile' => $file,
+				'Body' => fopen($file,'rb'),
+				'StorageClass' => 'REDUCED_REDUNDANCY',
+				'ACL' => 'public-read'
 			)
 		);
 	} catch (S3Exception $e) {

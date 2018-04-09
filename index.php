@@ -7,6 +7,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVPZ7D9');</script>
+<!-- End Google Tag Manager -->
 <title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,6 +49,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <body>
 <?php include_once("analyticstracking.php") ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVPZ7D9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
@@ -49,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
-				<input type="text" name="product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="text" name="product" value="Search a deal..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a deal...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 	
@@ -107,13 +118,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
 					<p>Get Great Deals on Electronics, Home Appliances </p>
-					
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
 					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:a">admin@salehunter.online</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:admin@salehunter.online">admin@salehunter.online</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -259,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
+											<a href="'.$res["imgurl"].'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
 											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
 											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
 										</div>

@@ -98,22 +98,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </div>
 				   <div class="form">
 					<h2>Add Products</h2>
-					<form action="adminupload.php" method="post" enctype="multipart/form-data">
+					<form action="adminuploadadvanced.php" method="post" enctype="multipart/form-data">
 						<input type="text" name="brand" placeholder="Brand Name" required=" ">
 						<input type="text" name="product" placeholder="Product Name" required=" ">
 						<select name="category">
 							<option selected="selected">Select categary</option>
-							<option value="electronics">Electronics</option>
-							<option value="home">Home</option>
-						</select>
-						<select name="subcategory">
-							<option selected="selected">Select categary</option>
 							<option value="mobile">Mobile</option>
 							<option value="television">Television</option>
-							<option value="laptop">Laptop</option>
-							<option value="furniture">Furniture</option>
-							<option value="kitchen">Kitchen</option>
-							<option value="decor">Decor</option>
+							<option value="camera">Camera</option>
+							<option value="networking">Networking</option>
+							<option value="homeappliances">Home Appliances</option>
+							<option value="grocery">Grocery</option>
 						</select>
 						<br>
 						<br>

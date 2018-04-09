@@ -7,6 +7,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVPZ7D9');</script>
+<!-- End Google Tag Manager -->
 <title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,6 +47,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 </head>	
 <body>
+<?php include_once("analyticstracking.php") ?>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVPZ7D9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
@@ -47,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
-				<input type="text" name="product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="text" name="product" value="Search a deal..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a deal...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 	
@@ -104,16 +116,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
+					<p>Get Great Deals on Electronics, Home Appliances </p>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
 					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:admin@salehunter.online">admin@salehunter.online</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -161,7 +170,7 @@ echo'<div align="center">';
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
-				echo'
+			echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
@@ -170,13 +179,13 @@ echo'<div align="center">';
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="40px" width="40px" /></a>		
-											<p>'.$res["brand"].'</p>
-											<h4>'.$res["priceafter"].'<span>'.$res["pricebefore"].'</span></h4>
+											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
+											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
+											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">
-													<input type="submit" name="submit" value="Add to cart" class="button" />												
+												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									
 										</div>
@@ -186,7 +195,7 @@ echo'<div align="center">';
 						</div>
 					</div>
 				</div>';
-				
+					
 			}echo'	
 				<div class="clearfix"></div>
 			</div>

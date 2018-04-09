@@ -267,7 +267,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">
-												<input type="submit" name="submit" value="Add to cart" class="button" />													
+												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									
 										</div>

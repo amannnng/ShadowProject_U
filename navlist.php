@@ -184,7 +184,7 @@ echo'<div align="center">';
 
 	echo '
 <!-- top-brands -->
-	<div class="top-brands">
+	<!--<div class="top-brands">-->
 		<div class="container">
 			<h3>Offers Found</h3>
 			<div class="agile_top_brands_grids">';
@@ -220,7 +220,7 @@ echo'<div align="center">';
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>';
+	<!--</div>-->';
 	
 	
  }	

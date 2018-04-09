@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
-				<input type="text" name="product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="text" name="product" value="Search a deal..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a deal...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 	
@@ -158,7 +158,7 @@ echo'<div align="center">';
 
 	
 	$product = $_POST['product'];
-	$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product))));
+	$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product),array("category" =>$product),array("description" =>$product))));
 	//$row=$collection->find(array("brand"=>$product,"product"=>$product));
 //echo $date;
 		

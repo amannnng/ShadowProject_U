@@ -120,7 +120,7 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 		//$newFile = fopen($detailPageLocation, "w")
 		$current = file_get_contents($detailPageLocation);
 		// Append a new person to the file
-		$current ,= "<!doctype html><html>
+		$current .= "<!doctype html><html>
 <head><meta charset='utf-8'>
 	<title>".$product."</title>
 </head>

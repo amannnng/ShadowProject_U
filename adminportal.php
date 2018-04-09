@@ -87,10 +87,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   <div class="form">
 					<h2>Add Products</h2>
 					<form action="adminupload.php" method="post" enctype="multipart/form-data">
-						Select image to upload:
-						<input type="file" name="fileToUpload" id="fileToUpload">
 						<input type="text" name="brand" placeholder="Brand Name" required=" ">
-					<input type="text" name="product" placeholder="Product Name" required=" ">
+						<input type="text" name="product" placeholder="Product Name" required=" ">
 						<select name="category">
 							<option selected="selected">Select categary</option>
 							<option value="mobile">Mobile</option>
@@ -116,53 +114,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<option value="Walmart">Walmart</option>
 						</select>
 						<br>
+						
+						Select image to upload:
 						<br>
-<?php /*
-if($_SERVER['REQUEST_METHOD']=="POST")
-{
-// connect to mongodb
-   $m = new MongoClient();
-   // select a database
-   $db = $m->dealhunter;
-   $collection = $db->coupons;
-if(!empty($_POST['imgurl']) && !empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['category']) && !empty($_POST['imgurl']) && !empty($_POST['description']) && !empty($_POST['pricebefore']) && !empty($_POST['priceafter']) && !empty($_POST['offerexp']) && !empty($_POST['storelocation']))
- { 
-   $imgurl = $_POST['imgurl'];
-   $brand = $_POST['brand'];
-   $product = $_POST['product'];
-   $category = $_POST['category'];
-   $description = $_POST['description'];
-   $pricebefore = $_POST['pricebefore'];
-   $priceafter = $_POST['priceafter'];
-   $offerexp = $_POST['offerexp'];
-   $storelocation = $_POST['storelocation'];
-	   
-	$x=true;
-	$row=$collection->find();
-	foreach($row as $res)
-	{
-		if($res['storelocation']==$storelocation && $res['brand']==$brand && $res['product']==$product)
-		$x=false;
-	}
-	if($x)
-	{
-		 $query = array("imgurl"=>"$imgurl","brand"=>"$brand","product"=>"$product","category"=>"$category","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation");
-		 $collection->insert($query);
-		 echo'insert success';			
-		 //header('Location: index.php');
-		
-	}
-	else
-	{
-		echo"Adv already exist";		
-	}
- }
-else
-{
-	echo"Enter All * Parameters";
-}
-}*/
-?>  
+						<input type="file" name="fileToUpload" id="fileToUpload">
+						<br>
 					<input type="submit" name="submit "value="Add">
 					</form>
 				  </div>

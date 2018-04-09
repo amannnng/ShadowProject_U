@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
+			<a href="index.php">Go Back To Home</a>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
@@ -176,19 +176,7 @@ echo'<div align="center">';
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
-													<input type="hidden" name="amount" value="7.99" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-													
+																									
 											</form>
 									
 										</div>
@@ -200,7 +188,7 @@ echo'<div align="center">';
 				</div>';
 				
 			}echo'	
-				<div class="clearfix"> <button value="Go Back" href="index.php" class="button" /> </div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>';

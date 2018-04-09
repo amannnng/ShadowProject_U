@@ -3,7 +3,7 @@
 	$bucketName = $awsinfo['bucketName'];
 	$IAM_KEY = $awsinfo['IAM_KEY'];
 	$IAM_SECRET = $awsinfo['IAM_SECRET'];
-  require '/vendor/autoload.php';
+  require 'vendor/autoload.php';
   use Aws\S3\S3Client;
   use Aws\S3\Exception\S3Exception;
   // Get the access code

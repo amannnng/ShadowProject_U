@@ -106,7 +106,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<p>                                            Get Great Deals Daily</p>
+					<p>................Get Great Deals Daily.................</p>
 					
 				</ul>
 			</div>

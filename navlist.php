@@ -243,8 +243,9 @@ echo'<div align="center">';
 			<!-- //flexSlider -->
 		</div>
 	</div>
+<!--Commenting the part which displays all the items
 <?php
-
+/*
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
@@ -298,7 +299,9 @@ echo'<div align="center">';
 			</div>
 		</div>
 	</div>';
+	*/
 ?> 
+-->
 <!-- //top-brands -->
 <!-- fresh-vegetables -->
 	<div class="fresh-vegetables">

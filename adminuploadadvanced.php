@@ -93,7 +93,7 @@ if(!empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['catego
 	}
 	if($x)
 	{
-		 $detailPageLocation = "../saleDetailPages/".$category."/".$product."_".$storelocation."_".$offerexp.".html";
+		 $detailPageLocation = '../saleDetailPages/'.$category.'/'.$product.'_'.$storelocation.'_'.$offerexp.'.html';
 		 $query = array("imgurl"=>"$pathInS3","brand"=>"$brand","product"=>"$product","category"=>"$category","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation","detailPageLocation"=>"$detailPageLocation");
 		 $collection->insert($query);
 

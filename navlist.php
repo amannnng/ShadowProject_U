@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WVPZ7D9');</script>
 <!-- End Google Tag Manager -->
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Sale Hunter - Navigation</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -184,7 +184,7 @@ echo'<div align="center">';
 
 	echo '
 <!-- top-brands -->
-	<div class="top-brands">
+	<!--<div class="top-brands">-->
 		<div class="container">
 			<h3>Offers Found</h3>
 			<div class="agile_top_brands_grids">';
@@ -220,7 +220,7 @@ echo'<div align="center">';
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>';
+	<!--</div>-->';
 	
 	
  }	
@@ -243,8 +243,9 @@ echo'<div align="center">';
 			<!-- //flexSlider -->
 		</div>
 	</div>
+<!--Commenting the part which displays all the items
 <?php
-
+/*
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
@@ -298,7 +299,9 @@ echo'<div align="center">';
 			</div>
 		</div>
 	</div>';
+	*/
 ?> 
+-->
 <!-- //top-brands -->
 <!-- fresh-vegetables -->
 	<div class="fresh-vegetables">

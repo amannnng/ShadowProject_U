@@ -93,7 +93,7 @@ if(!empty($_POST['brand']) && !empty($_POST['product']) && !empty($_POST['catego
 	}
 	if($x)
 	{
-		 $detailPageLocation = "../saleDetailPages/".$category."/".$product."_".$storelocation."_".$offerexp.".html";
+		 $detailPageLocation = 'saleDetailPages/'.$category.'/'.$product.'_'.$storelocation.'_'.$offerexp.'.html';
 		 $query = array("imgurl"=>"$pathInS3","brand"=>"$brand","product"=>"$product","category"=>"$category","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation","detailPageLocation"=>"$detailPageLocation");
 		 $collection->insert($query);
 
@@ -117,6 +117,7 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 	{
 		
 		// Open the file to get existing content
+		//$newFile = fopen($detailPageLocation, "w")
 		$current = file_get_contents($detailPageLocation);
 		// Append a new person to the file
 		$current .= "<!doctype html><html>
@@ -124,11 +125,8 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 	<title>".$product."</title>
 </head>
 	<body>
-	
-
-
 	<a href=".$pathInS3.">
-		<img src=".$pathInS3." height="250" width="150"/>
+	<img src=".$pathInS3." />
 	</a>		
 	<p>".$brand."</p>
 	<p>".$product."</p>
@@ -140,6 +138,8 @@ function createSaleDetailPage($category, $brand, $product, $description,$pricebe
 </html>
 ";
 		// Write the contents back to the file
+		//fwrite($newFile, $fileContent);
+		//fclose($newFile);
 		file_put_contents($detailPageLocation, $current);
 	}
 

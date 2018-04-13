@@ -206,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="delete.php" method="post">
 												<!--<input type="submit" name="submit" value="Save for Later" class="button" />	-->'
-												$id=$res["_id"];
+												$id = $res["Object_id"];
 											echo'	<a href="deleteitem.php?id='.$id.'">Delete Item</a>
 											</form>
 									

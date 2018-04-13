@@ -165,9 +165,7 @@ echo'<div align="center">';
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">
-		<div class="container">
-			<h3>Offers Found</h3>
-			<div class="agile_top_brands_grids">';
+		<div class="container">';
 			
 			$itemCount = $row->count();
 			
@@ -178,6 +176,8 @@ echo'<div align="center">';
 				{
 				
 				echo'
+				<h3>Offers Found</h3>
+				<div class="agile_top_brands_grids">
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
@@ -209,7 +209,7 @@ echo'<div align="center">';
 			else
 				{
 					
-					echo 'No results found. Please search for some other deals.';
+					echo '<h3>No results found. Please search for some other deals.</h3>';
 				}
 			echo'	
 				<div class="clearfix"></div>

@@ -14,7 +14,7 @@
 	$collection->remove(array("_id"=>new MongoId($id)));
 		
 //	echo'<script language="javascript" type="text/javascript">alert("Your Account Has Been Deleted Successfully.");</script>';
-	header("location:bookprofile.php");
+	header("location:adminportal.php");
 ?>
       
 

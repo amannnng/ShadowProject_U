@@ -170,6 +170,8 @@ echo'<div align="center">';
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
+				if(!$row)
+				{
 			echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
@@ -196,7 +198,13 @@ echo'<div align="center">';
 					</div>
 				</div>';
 					
-			}echo'	
+				}
+				else
+				{
+					echo 'No results found. Please search for some other deals.';
+				}
+			}
+			echo'	
 				<div class="clearfix"></div>
 			</div>
 		</div>

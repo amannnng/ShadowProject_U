@@ -303,7 +303,7 @@ echo'<div align="center">';
 			</div>
 		</div>
 	</div>';
-	*/
+	
 ?> 
 
 <!-- //top-brands -->

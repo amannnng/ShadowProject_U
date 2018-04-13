@@ -169,7 +169,7 @@ echo'<div align="center">';
 			<h3>Offers Found</h3>
 			<div class="agile_top_brands_grids">';
 			echo '0';
-			if($row)
+			if(!($row.count() == 0))
 			{
 				echo '1';
 			foreach($row as $res)

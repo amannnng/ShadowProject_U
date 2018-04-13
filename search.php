@@ -168,8 +168,10 @@ echo'<div align="center">';
 		<div class="container">
 			<h3>Offers Found</h3>
 			<div class="agile_top_brands_grids">';
+			echo '0';
 			if($row)
 			{
+				echo '1';
 			foreach($row as $res)
 				{
 				
@@ -204,6 +206,7 @@ echo'<div align="center">';
 			}
 			else
 				{
+					echo '2';
 					echo 'No results found. Please search for some other deals.';
 				}
 			echo'	

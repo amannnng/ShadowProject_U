@@ -273,7 +273,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 <!-- //fresh-vegetables -->
-<!-- newsletter -->
+<!-- newsletter 
 	<div class="newsletter">
 		<div class="container">
 			<div class="w3agile_newsletter_left">

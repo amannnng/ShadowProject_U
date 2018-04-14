@@ -268,9 +268,7 @@ $id=$_GET["id"];
 			{
 				echo'
 				<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
-			</div>
+			
 			<div class="agileinfo_single">
 				<h5>'.$res["brand"].'  '.$res["product"].'</h5>
 				<div class="col-md-4 agileinfo_single_left">

@@ -136,7 +136,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
     display: block;
 	text-decoration:none;
 }
-.item_data_ellipsis{
+/*.item_data_ellipsis{
     white-space: nowrap; 
     width: 200px; 
     overflow: hidden;
@@ -145,7 +145,15 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 .item_data_ellipsis:hover{
     overflow: visible; 
     white-space: normal;
-    height:auto;  /* just added this line */
+    height:auto;  
+}*/
+.item_data_ellipsis{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.hideText2{
+  max-width:200px;
 }
 ul.dropdown-menu.drp-mnu {
     right: 0;

@@ -253,12 +253,10 @@ echo'<div align="center">';
    $db = $m->dealhunter;
    $collection = $db->coupons;
 
-
-	$row=$collection->find();
+$id=$_GET["id"];
+	$row=$collection->find(array("_id"=>new MongoId($id)));
 	//$date1=new MongoDate(strtotime($offerexp));
-	$date=new MongoDate();
 	
-//echo $date;
 	echo'<div align="center"></div>';
 	echo '
 <!-- top-brands -->

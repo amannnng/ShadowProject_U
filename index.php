@@ -239,8 +239,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="agile_top_brand_left_grid1">
 								<figure>
 									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">
-											<a href="single.php"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
+										<div class="snipcart-thumb">';
+										$id = $res["_id"];
+										echo'<a href="single.php?id="><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
 											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
 											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
 										</div>

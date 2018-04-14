@@ -145,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<!--<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
 						<li><a href="navlist.php?value=electronics">Electronics</a></li>
@@ -263,7 +263,7 @@ $id=$_GET["id"];
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3> Offers</h3>
+			<!--<h3> Offers</h3>-->
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
@@ -282,7 +282,7 @@ $id=$_GET["id"];
 					</div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
-							<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+							<p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p>
 						</div>
 						<div class="snipcart-details agileinfo_single_right_details">
 							<form action="#" method="post">

@@ -354,9 +354,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<div class="clearfix"> </div>
 			</div>-->
-			<!--<div class="wthree_footer_copy">-->
+			<div class="wthree_footer_copy">
 				<p>© 2018 Sale Hunter Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			<!--</div>-->
+			</div>
 		<!--</div>-->
 	</div>
 <!-- //footer -->

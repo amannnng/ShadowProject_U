@@ -14,7 +14,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WVPZ7D9');</script>
 <!-- End Google Tag Manager -->
-<title>Sale Hunter - Navigation</title>
+<link rel="shortcut icon" href="images/main.ico" />
+<title>Sale Hunter - Deal Details</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -81,8 +82,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
+								<li><a href="adminlogin.php">Admin Login</a></li> 
+								<li><a href="userlogin">User Login</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -113,11 +114,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+				<h1><a href="index.php"><span>Sale</span> Hunter</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<p>Get Great Deals on Electronics, Home Appliances </p>
+					<p style="color:DodgerBlue;">Get Great Deals on many products </p>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -133,8 +134,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
-			 <!-- Brand and toggle get grouped for better mobile display -->
+			<!--<nav class="navbar nav_bottom">
+			 <!-- Brand and toggle get grouped for better mobile display 
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 					<span class="sr-only">Toggle navigation</span>
@@ -144,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<!--<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
 						<li><a href="navlist.php?value=electronics">Electronics</a></li>
@@ -158,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					</ul>
 				 </div><!-- /.navbar-collapse -->
-			</nav>
+			<!--</nav>-->
 		</div>
 		<div class="w3l_banner_nav_right">
 			<?php /*
@@ -260,19 +261,18 @@ $id=$_GET["id"];
 	echo'<div align="center"></div>';
 	echo '
 <!-- top-brands -->
-	<div class="top-brands">
+	<!--<div class="top-brands">-->
 		<div class="container">
-			<h3> Offers</h3>
+			<!--<h3> Offers</h3>-->
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
 				echo'
 				<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
-			</div>
+			
 			<div class="agileinfo_single">
-				<h5>'.$res["brand"].'  '.$res["product"].'</h5>
+				<h5><p>'.$res["product"].'</p><p><i>from </i>'.$res["brand"].'</p></h5>
+				
 				<div class="col-md-4 agileinfo_single_left">
 					<img id="example" src="'.$res["imgurl"].'" alt=" " class="img-responsive" />
 				</div>
@@ -283,7 +283,7 @@ $id=$_GET["id"];
 					</div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
-							<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+							<p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p>
 						</div>
 						<div class="snipcart-details agileinfo_single_right_details">
 							<form action="#" method="post">
@@ -305,7 +305,7 @@ $id=$_GET["id"];
 ?> 
 
 <!-- //top-brands -->
-<!-- fresh-vegetables -->
+<!-- fresh-vegetables -
 	<div class="fresh-vegetables">
 		
 				<div class="clearfix"> </div>
@@ -313,7 +313,7 @@ $id=$_GET["id"];
 		</div>
 	</div>
 <!-- //fresh-vegetables -->
-<!-- newsletter -->
+<!-- newsletter -
 	<div class="newsletter">
 		<div class="container">
 			<div class="w3agile_newsletter_left">
@@ -331,7 +331,8 @@ $id=$_GET["id"];
 <!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">
-		<div class="container">
+		<!--<div class="container">-->
+			<!--
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
@@ -392,11 +393,11 @@ $id=$_GET["id"];
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
+			</div>-->
 			<div class="wthree_footer_copy">
-				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 Sale Hunter Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
-		</div>
+		<!--</div>-->
 	</div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->

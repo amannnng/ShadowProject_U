@@ -14,6 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WVPZ7D9');</script>
 <!-- End Google Tag Manager -->
+<link rel="shortcut icon" href="images/main.ico" />
 <title>Sale Hunter - Navigation</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,8 +82,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
+								<li><a href="adminlogin.php">Admin Login</a></li> 
+								<li><a href="userlogin">User Login</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -113,11 +114,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+				<h1><a href="index.php"><span>Sale</span> Hunter</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<p>Get Great Deals on Electronics, Home Appliances </p>
+					<p style="color:DodgerBlue;">Get Great Deals on many products </p>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -160,7 +161,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-		<div class="w3l_banner_nav_right">
+		<div class="w3l_banner_nav_right"></div>
+		<script>
+			$(document).on('mouseenter', ".item_data_ellipsis", function () {
+			    var $this = $(this);
+			     if (this.offsetWidth < this.scrollWidth && !$this.attr('title')) {
+			         $this.tooltip({
+			             title: $this.text(),
+			             placement: "top"
+			             
+			         });
+			         $this.tooltip('show');
+			     }
+			 });
+			$('.hideText').css('width',$('.hideText').parent().width());
+	</script>
 			<?php
 // connect to mongodb
    $m = new MongoClient();
@@ -184,13 +199,13 @@ echo'<div align="center">';
 
 	echo '
 <!-- top-brands -->
-	<!--<div class="top-brands">-->
+	<div class="top-brands">
 		<div class="container">
-			<h3>Offers Found</h3>
+			<h3>    Offers Found</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
-			echo'
+		echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
@@ -198,10 +213,15 @@ echo'<div align="center">';
 							<div class="agile_top_brand_left_grid1">
 								<figure>
 									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
-											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
-											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+										<div class="snipcart-thumb">';
+										$id = $res["_id"];
+										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res["product"].'" alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
+											<p></p>	
+											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
+											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
+											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
+											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">
@@ -215,7 +235,7 @@ echo'<div align="center">';
 						</div>
 					</div>
 				</div>';
-					
+							
 			}echo'	
 				<div class="clearfix"></div>
 			</div>
@@ -243,67 +263,9 @@ echo'<div align="center">';
 			<!-- //flexSlider -->
 		</div>
 	</div>
-<!--Commenting the part which displays all the items
-<?php
-/*
-// connect to mongodb
-//$m = new \MongoDB\Driver\Manager();
-  $m = new MongoClient();
-// select a database
-   $db = $m->dealhunter;
-   $collection = $db->coupons;
 
-
-	$row=$collection->find();
-	//$date1=new MongoDate(strtotime($offerexp));
-	$date=new MongoDate();
-	
-//echo $date;
-	echo'<div align="center"></div>';
-	echo '
-<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3> Offers</h3>
-			<div class="agile_top_brands_grids">';
-			foreach($row as $res)
-			{
-				echo'
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">
-											<a href="'.$res["imgurl"].'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
-											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
-											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
-												<input type="submit" name="submit" value="Save for Later" class="button" />													
-											</form>
-									
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>';
-				
-			}echo'	
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>';
-	*/
-?> 
--->
 <!-- //top-brands -->
-<!-- fresh-vegetables -->
+<!-- fresh-vegetables 
 	<div class="fresh-vegetables">
 		
 				<div class="clearfix"> </div>
@@ -311,7 +273,7 @@ echo'<div align="center">';
 		</div>
 	</div>
 <!-- //fresh-vegetables -->
-<!-- newsletter -->
+<!-- newsletter 
 	<div class="newsletter">
 		<div class="container">
 			<div class="w3agile_newsletter_left">
@@ -329,7 +291,8 @@ echo'<div align="center">';
 <!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">
-		<div class="container">
+		<!--<div class="container">-->
+			<!--
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
@@ -390,11 +353,11 @@ echo'<div align="center">';
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
+			</div>-->
 			<div class="wthree_footer_copy">
-				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 Sale Hunter Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
-		</div>
+		<!--</div>-->
 	</div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->

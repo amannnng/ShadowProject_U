@@ -329,7 +329,8 @@ $id=$_GET["id"];
 <!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">
-		<div class="container">
+		<!--<div class="container">-->
+			<!--
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
@@ -390,11 +391,11 @@ $id=$_GET["id"];
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
+			</div>-->
 			<div class="wthree_footer_copy">
-				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 Sale Hunter Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
-		</div>
+		<!--</div>-->
 	</div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->

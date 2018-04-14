@@ -260,8 +260,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<div class="item_data_ellipsis hideText2">Brand: '.$res["brand"].'</div>
 											<div class="item_data_ellipsis hideText2">Product: '.$res["product"].'</div>
 											<div class="item_data_ellipsis hideText2">Description: '.$res["description"].'</div>
-											<p>Store: '.$res["storelocation"].'</p>
-											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+											<div class="item_data_ellipsis hideText2">Store: '.$res["storelocation"].'</div>
+											<div class="item_data_ellipsis hideText2"><h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">

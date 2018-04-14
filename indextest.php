@@ -214,6 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			         $this.tooltip({
 			             title: $this.text(),
 			             placement: "top"
+			             
 			         });
 			         $this.tooltip('show');
 			     }
@@ -254,7 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
 										$id = $res["_id"];
-										echo'<a href="single.php?id='.$id.'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>	
+										echo'<a href="single.php?id='.$id.'"><img title=" " alt=" " src="'.$res["imgurl"].'" "/></a>	
 											<p></p>	
 											<div class="item_data_ellipsis hideText2">Brand: '.$res["brand"].'</div>
 											<div class="item_data_ellipsis hideText2">Product: '.$res["product"].'</div>

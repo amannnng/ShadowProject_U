@@ -161,6 +161,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right"></div>
+		<script>
+			$(document).on('mouseenter', ".item_data_ellipsis", function () {
+			    var $this = $(this);
+			     if (this.offsetWidth < this.scrollWidth && !$this.attr('title')) {
+			         $this.tooltip({
+			             title: $this.text(),
+			             placement: "top"
+			             
+			         });
+			         $this.tooltip('show');
+			     }
+			 });
+			$('.hideText').css('width',$('.hideText').parent().width());
+	</script>
 			<?php
 // connect to mongodb
    $m = new MongoClient();
@@ -190,7 +204,7 @@ echo'<div align="center">';
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
-			echo'
+		echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
@@ -200,9 +214,13 @@ echo'<div align="center">';
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
 										$id = $res["_id"];
-										echo'<a href="single.php?id='.$id.'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
-											<p>'.$res["brand"].'</p><p>'.$res["product"].'</p><p>'.$res["description"].'</p><p>'.$res["storelocation"].'</p>
-											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res["product"].'" alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
+											<p></p>	
+											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
+											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
+											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
+											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">
@@ -216,7 +234,7 @@ echo'<div align="center">';
 						</div>
 					</div>
 				</div>';
-					
+							
 			}echo'	
 				<div class="clearfix"></div>
 			</div>

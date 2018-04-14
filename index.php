@@ -214,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			         $this.tooltip({
 			             title: $this.text(),
 			             placement: "top",
-			             "z-index": "2"
+			             "z-index": "999"
 			         });
 			         $this.tooltip('show');
 			     }

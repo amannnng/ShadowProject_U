@@ -134,8 +134,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
-			 <!-- Brand and toggle get grouped for better mobile display -->
+			<!--<nav class="navbar nav_bottom">
+			 <!-- Brand and toggle get grouped for better mobile display 
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 					<span class="sr-only">Toggle navigation</span>
@@ -159,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					</ul>
 				 </div><!-- /.navbar-collapse -->
-			</nav>
+			<!--</nav>-->
 		</div>
 		<div class="w3l_banner_nav_right">
 			<?php
@@ -271,8 +271,8 @@ $id=$_GET["id"];
 				<div class="w3l_banner_nav_right">
 			
 			<div class="agileinfo_single">
-				<h5>'.$res["product"].'</h5>
-				<h6><i>from '.$res["brand"].'</i></h6>
+				<h5><p>'.$res["product"].'</p><p><i>from </i>'.$res["brand"].'</p></h5>
+				
 				<div class="col-md-4 agileinfo_single_left">
 					<img id="example" src="'.$res["imgurl"].'" alt=" " class="img-responsive" />
 				</div>

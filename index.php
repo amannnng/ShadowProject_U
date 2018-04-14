@@ -292,6 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
+			<!--
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
@@ -352,7 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
+			</div>-->
 			<div class="wthree_footer_copy">
 				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>

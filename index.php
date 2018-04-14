@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 	<script>
-			$(document).on('mouseenter', "item_data_ellipsis", function () {
+			$(document).on('mouseenter', ".item_data_ellipsis", function () {
 			    var $this = $(this);
 			     if (this.offsetWidth < this.scrollWidth && !$this.attr('title')) {
 			         $this.tooltip({

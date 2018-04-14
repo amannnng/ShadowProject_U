@@ -136,6 +136,12 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
     display: block;
 	text-decoration:none;
 }
+.item_data_ellipsis{
+    white-space: nowrap; 
+    width: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
 ul.dropdown-menu.drp-mnu {
     right: 0;
     min-width: 130px;

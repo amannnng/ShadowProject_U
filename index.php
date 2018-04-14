@@ -291,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">
-		<div class="container">
+		<!--<div class="container">-->
 			<!--
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
@@ -354,10 +354,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<div class="clearfix"> </div>
 			</div>-->
-			<!--<div class="wthree_footer_copy">-->
+			<div class="wthree_footer_copy">
 				<p>© 2018 Sale Hunter Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			<!--</div>-->
-		</div>
+			</div>
+		<!--</div>-->
 	</div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->

@@ -241,11 +241,11 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	if($x)
 	{
 		if($collection->find(array("username"=>$username,"password"=>$password)))
-		{
+		{echo'login success';
 			//session_start();
 			//$_SESSION['name']=$username;
 			//print_r($_SESSION);	
-			header('Location: index.php');
+			//header('Location: index.php');
 		}
 		
 	}

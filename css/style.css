@@ -148,6 +148,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
     height:auto;  
 }*/
 .item_data_ellipsis{
+    text-align: center;
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;

@@ -170,7 +170,7 @@ echo'<div align="center">';
 	
 	$product = $_POST['product'];
 	//$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product))));
-	$row = $collection->find(array('$or' => array(array({"brand":{$lte:$product}}),array({"product":{$lte:$product}}))));
+	$row = $collection->find(array('$or' => array(array("brand":($lte:$product)),array("product":($lte:$product))));
 	//$row=$collection->find(array("brand"=>$product,"product"=>$product));
 //echo $date;
 		

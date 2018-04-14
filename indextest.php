@@ -259,8 +259,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<p></p>	
 											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
 											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
-											<div class="item_data_ellipsis hideText2">having '.$res["description"].'</div>
-											<div class="item_data_ellipsis hideText2">get in '.$res["storelocation"].'</div>
+											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
 											<div class="item_data_ellipsis hideText2"><p><h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">

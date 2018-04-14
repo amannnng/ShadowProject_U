@@ -201,7 +201,7 @@ echo'<div align="center">';
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3>Offers Found</h3>
+			<h3>    Offers Found</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{

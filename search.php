@@ -218,7 +218,7 @@ echo'<div align="center">';
 	</div>';
 ?>
 <!-- //top-brands -->
-<!-- fresh-vegetables -->
+<!-- fresh-vegetables -
 	<div class="fresh-vegetables">
 		
 				<div class="clearfix"> </div>
@@ -226,7 +226,7 @@ echo'<div align="center">';
 		</div>
 	</div>
 <!-- //fresh-vegetables -->
-<!-- newsletter -->
+<!-- newsletter -
 	<div class="newsletter">
 		<div class="container">
 			<div class="w3agile_newsletter_left">

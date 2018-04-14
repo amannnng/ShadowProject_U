@@ -168,7 +168,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 echo'<div align="center">';
 
 	
-	$product = '/'.$_POST['product'].'/';
+	//$product = $_POST['product'];
+	$product = new MongoRegex("/$_POST['product']/i")
 	//$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product))));
 	$row = $collection->find(array('$or' => array(array("brand" =>$product),array("product" =>$product))));
 	//$row=$collection->find(array("brand"=>$product,"product"=>$product));

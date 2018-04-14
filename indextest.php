@@ -258,9 +258,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										echo'<a href="single.php?id='.$id.'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
 											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
-											<div class="item_data_ellipsis hideText2">from '.$res["brand"].'</div>
+											<div class="item_data_ellipsis hideText2"><i><h6>from </h6></i>'.$res["brand"].'</div>
 											<div class="item_data_ellipsis hideText2">having '.$res["description"].'</div>
-											<div class="item_data_ellipsis hideText2">Find in'.$res["storelocation"].'</div>
+											<div class="item_data_ellipsis hideText2">get in '.$res["storelocation"].'</div>
 											<div class="item_data_ellipsis hideText2"><p><h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">

@@ -242,9 +242,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="snipcart-thumb">';
 										$id = $res["_id"];
 										echo'<a href="single.php?id='.$id.'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>		
-											<div class="item_data_ellipsis"><p>'.$res["brand"].'</p></div>
-											<div class="item_data_ellipsis"><p>'.$res["product"].'</p></div>
-											<div class="item_data_ellipsis"><p>'.$res["description"].'</p></div>
+											<div class="item_data_ellipsis">'.$res["brand"].'</div>
+											<div class="item_data_ellipsis">'.$res["product"].'</div>
+											<div class="item_data_ellipsis">'.$res["description"].'</div>
 											<p>'.$res["storelocation"].'</p>
 											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
 										</div>

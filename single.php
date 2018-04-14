@@ -161,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<?php
+			<?php /*
 // connect to mongodb
    $m = new MongoClient();
    // select a database
@@ -225,7 +225,7 @@ echo'<div align="center">';
 	
  }	
 
- 
+ */
  ?>
 			<!-- flexSlider -->
 				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />

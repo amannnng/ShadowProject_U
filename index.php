@@ -264,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>';
 ?> 
 <!-- //top-brands -->
-<!-- fresh-vegetables -->
+<!-- fresh-vegetables 
 	<div class="fresh-vegetables">
 		
 				<div class="clearfix"> </div>

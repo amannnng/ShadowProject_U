@@ -214,6 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			         $this.tooltip({
 			             title: $this.text(),
 			             placement: "top"
+			             
 			         });
 			         $this.tooltip('show');
 			     }
@@ -254,13 +255,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
 										$id = $res["_id"];
-										echo'<a href="single.php?id='.$id.'"><img title=" " alt=" " src="'.$res["imgurl"].'" height="50px" width="50px"/></a>	
+										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res["product"].'" alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
-											<div class="item_data_ellipsis hideText2">Brand: '.$res["brand"].'</div>
-											<div class="item_data_ellipsis hideText2">Product: '.$res["product"].'</div>
-											<div class="item_data_ellipsis hideText2">Description: '.$res["description"].'</div>
-											<p>Store: '.$res["storelocation"].'</p>
-											<h4>$'.$res["priceafter"].'<span>$'.$res["pricebefore"].'</span></h4>
+											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
+											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
+											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
+											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.html" method="post">

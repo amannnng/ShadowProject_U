@@ -261,7 +261,7 @@ $id=$_GET["id"];
 	echo'<div align="center"></div>';
 	echo '
 <!-- top-brands -->
-	<div class="top-brands">
+	<!--<div class="top-brands">-->
 		<div class="container">
 			<!--<h3> Offers</h3>-->
 			<div class="agile_top_brands_grids">';
@@ -271,7 +271,8 @@ $id=$_GET["id"];
 				<div class="w3l_banner_nav_right">
 			
 			<div class="agileinfo_single">
-				<h5>'.$res["brand"].'  '.$res["product"].'</h5>
+				<h5>'.$res["product"].'</h5>
+				<h6><i>from '.$res["brand"].'</i></h6>
 				<div class="col-md-4 agileinfo_single_left">
 					<img id="example" src="'.$res["imgurl"].'" alt=" " class="img-responsive" />
 				</div>

@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			     }
 			 });
 			$('.hideText').css('width',$('.hideText').parent().width());
-	</script>>
+	</script>
 <?php
 
 // connect to mongodb

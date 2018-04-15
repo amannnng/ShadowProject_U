@@ -212,7 +212,8 @@ else{
     $collection = $db->coupons;
 	$query = array("_id"=>"$id");
 	$row=$collection->find($query);
-	$ee= $row["product"];
+	foreach ($row as $res)
+	$ee= $res["product"];
 	echo $ee;
 	$date=new MongoDate();
   

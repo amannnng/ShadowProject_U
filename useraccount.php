@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+	$uname= $_SESSION["name"];
+}
+else{
+	$uname='Login to';
+}
+?>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -15,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WVPZ7D9');</script>
 <!-- End Google Tag Manager -->
 <link rel="shortcut icon" href="images/main.ico" />
-<title>Sale Hunter - Navigation</title>
+<title>Sale Hunter - Home</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -57,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="index.php">Go Back To Home</a>
+			<a href="index.php">Home</a>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
@@ -67,27 +77,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 		</div>
 		<div class="product_list_header">  
-			<form action="#" method="post" class="last">
+			<form action="useraccount.php" method="post" class="last">
                 <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
+                    <!--<input type="hidden" name="cmd" value="_cart" />-->
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="Hi,<?Php echo $uname?>" class="button" />
                 </fieldset>
-            </form>
+            </form> 
 		</div>
 		<div class="w3l_header_right">
+
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+				<?php
+if(isset($_SESSION["name"]))
+{
+	echo '<a href="ulogout.php" color="white">Logout</a>';
+}
+else{
+	echo'	<a href="userlogin.php" color="white">Login</a>';
+	}
+?>
+							
+				<!--	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
+						
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="adminlogin.php">Admin Login</a></li> 
-								<li><a href="userlogin">User Login</a></li>
+								<li><a href="adminlogin.php">Admin Login</a></li>
+								<li><a href="userlogin.php">User Login</a></li>
 							</ul>
 						</div>                  
 					</div>	
-				</li>
+				</li>-->
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
@@ -161,8 +183,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-		<div class="w3l_banner_nav_right"></div>
-		<script>
+		 
+	</div>
+	<script>
 			$(document).on('mouseenter', ".item_data_ellipsis", function () {
 			    var $this = $(this);
 			     if (this.offsetWidth < this.scrollWidth && !$this.attr('title')) {
@@ -176,36 +199,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			 });
 			$('.hideText').css('width',$('.hideText').parent().width());
 	</script>
-			<?php
+<?php
+
 // connect to mongodb
-   $m = new MongoClient();
-   // select a database
+//$m = new \MongoDB\Driver\Manager();
+  $m = new MongoClient();
+// select a database
    $db = $m->dealhunter;
-   $collection = $db->userinfo;
+   $collection = $db->coupons;
 
-if(!empty($_GET['value']))
- { 
-   $value = $_GET['value'];
+
 	$row=$collection->find();
+	//$date1=new MongoDate(strtotime($offerexp));
+	$date=new MongoDate();
 	
-echo'<div align="center">';
-
-	$row = $collection->find(array('$or' => array(array("category" =>$value),array("subcategory" =>$value))));
-	//$row=$collection->find(array("brand"=>$product,"product"=>$product));
 //echo $date;
-		
-	echo'</div>';
-
-
+	echo'<div align="center"></div>';
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3>    Offers Found</h3>
+			<h3> Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
-		echo'
+				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
@@ -224,7 +242,7 @@ echo'<div align="center">';
 											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
+											<form action="checkout.php?id='.$id.'" method="post">
 												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									
@@ -235,35 +253,13 @@ echo'<div align="center">';
 						</div>
 					</div>
 				</div>';
-							
+				
 			}echo'	
-				<div class="clearfix"></div>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
-	<!--</div>-->';
-	
-	
- }	
-
- 
- ?>
-			<!-- flexSlider -->
-				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-				$(window).load(function(){
-				  $('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-				  });
-				});
-			  </script>
-			<!-- //flexSlider -->
-		</div>
-	</div>
-
+	</div>';
+?> 
 <!-- //top-brands -->
 <!-- fresh-vegetables 
 	<div class="fresh-vegetables">

@@ -270,8 +270,11 @@ else{
 		   $collection2 = $db2->coupons;
 			$row2=$collection2->find();
 			foreach($row2 as $res2)
-		{
-			echo'
+			{
+			
+				if($res["productid"]==$res2["_id"])
+				{
+					echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
@@ -280,9 +283,6 @@ else{
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
-			if($res["productid"]==$res2["_id"])
-			{
-				
 										$id = $res2["_id"];
 										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res2["product"].'" alt=" " src="'.$res2["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
@@ -305,9 +305,9 @@ else{
 					</div>
 				</div>';
 				
-			}	
+				}	
 			
-		}echo'	
+			}echo'	
 				<div class="clearfix"> </div>
 			</div>
 		</div>

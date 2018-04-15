@@ -239,7 +239,7 @@ else{
 				{
 					
 				
-										$id = $res2["_id"];
+										$id = $res1["productid"];
 										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res2["product"].'" alt=" " src="'.$res2["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
 											<div class="item_data_ellipsis hideText2">'.$res2["product"].'</div>
@@ -249,7 +249,7 @@ else{
 											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res2["priceafter"].'<span style="color:red;">$'.$res2["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.php?id='.$id.'" method="post">
+											<form action="deluserpro.php?id='.$id.'" method="post">
 												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									

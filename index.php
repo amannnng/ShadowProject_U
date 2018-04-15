@@ -5,7 +5,7 @@ if(isset($_SESSION["name"]))
 	$uname= $_SESSION["name"];
 }
 else{
-	$uname='Please Login to';
+	$uname='Login to';
 }
 ?>
 <!--

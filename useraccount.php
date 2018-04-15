@@ -203,21 +203,12 @@ else{
 
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
-  $m = new MongoClient();
-// select a database
-   $db = $m->dealhunter;
-   $collection = $db->coupons;
-	$row=$collection->find();
-	foreach($row as $res)
-	{
-		echo $res["product"];
-		echo $res["_id"];
-		echo "---------";
-		$m2 = new MongoClient();
+  
+   $m2 = new MongoClient();
 // select a database
    $db2 = $m2->dealhunter;
    $collection2 = $db2->userinfo;
-	$row2=$collection2->find(array());
+	$row2=$collection2->find(array("user"=>$uname));
 	foreach($row2 as $res2)
 	{
 		echo $res2["productid"];
@@ -225,8 +216,6 @@ else{
 		echo "*********";
 		
 	}
-	}
-   
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	

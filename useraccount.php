@@ -265,7 +265,7 @@ else{
 			$row2=$collection2->find();
 			foreach($row2 as $res2)
 		{
-			if($res["_id"]==$res2["productid"])
+			if($res["productid"]==$res2["_id"])
 			{
 				echo 'Match found';
 				

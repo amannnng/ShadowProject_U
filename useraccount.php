@@ -267,10 +267,10 @@ else{
 		{
 			if($res["productid"]==$res2["_id"])
 			{
-				echo 'Match found';
+				echo $res2["brand"];
 				
 			}	
-			else{echo'error2';}
+			
 		}
 	}
 ?> 

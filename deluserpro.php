@@ -6,7 +6,7 @@
    $collection = $db->userinfo;
 	$id=$_GET["id"];
 //	$row=$collection->find(array("productid"=>$id));
-	$collection->remove(array("productid"=>$id_);
+	$collection->remove(array("productid"=>$id));
 		echo''
 //	echo'<script language="javascript" type="text/javascript">alert("Your Account Has Been Deleted Successfully.");</script>';
 //	header("location:useraccount.php");

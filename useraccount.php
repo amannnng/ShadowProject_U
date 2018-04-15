@@ -226,7 +226,7 @@ else{
 				$collection2 = $db->coupons;
 				$query1 = array("_id"=>"$productid");
 				$row1=$collection2->find($query1);
-				foreach($row1 as $res)
+				foreach($row1 as $res1)
 				{
 				echo'
 				<div class="col-md-3 top_brand_left">
@@ -237,7 +237,7 @@ else{
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
-										$id = $res["_id"];
+										$id = $res1["_id"];
 										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res1["product"].'" alt=" " src="'.$res1["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
 											<div class="item_data_ellipsis hideText2">'.$res1["product"].'</div>

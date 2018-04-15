@@ -207,13 +207,17 @@ else{
   
 // select a database
    $db = $m->dealhunter;
-   
-   $collection = $db->userinfo;
+   //$uname= $_SESSION["name"];
+    $collection = $db->userinfo;
 	$query = array("username"=>"$uname");
 	$row=$collection->find($query);
+	foreach($row as $res)
+	{
+		echo .$res["username"].;
+		echo .$res["productid"].;
+	}
 	$date=new MongoDate();
-	$productid=$res["productid"];
-  //$uname= $_SESSION["name"];
+  
 //echo $date;
 	echo'<div align="center"></div>';
 	echo '

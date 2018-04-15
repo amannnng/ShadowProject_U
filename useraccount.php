@@ -225,7 +225,7 @@ else{
 				echo $productid;
 				echo'*************';
 				$collection2 = $db->coupons;
-				echo'22222222222222222'
+				echo'22222222222222222';
 				$query1 = array("_id"=>"$productid");
 				$row1=$collection2->find($query1);
 				echo'333333333';

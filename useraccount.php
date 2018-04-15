@@ -211,23 +211,23 @@ else{
 	$row2=$collection2->find(array("username"=>$uname));
 	foreach($row2 as $res2)
 	{
-		echo $res2["productid"];
+		$id = $res2["productid"];
 		echo $res2["username"];
 		echo "*********";
-		
-	}
 	$m = new MongoClient();
 // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-	$row=$collection->find();
+	$row=$collection->find(array("_id"=>$id));
 	foreach($row as $res)
 	{
-		/*echo $res["product"];
+		echo $res["product"];
 		echo $res["_id"];
-		echo "---------";*/
+		echo "---------";
 		
+	}	
 	}
+	
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	

@@ -210,7 +210,7 @@ else{
    //$uname= $_SESSION["name"];
     $collection = $db->coupons;
 //	$query = array("username"=>"$uname");
-	$row=$collection->find($query);
+	$row=$collection->find();
 	
 	$date=new MongoDate();
   

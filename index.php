@@ -5,7 +5,7 @@ if(isset($_SESSION["name"]))
 	$uname= $_SESSION["name"];
 }
 else{
-	$uname='Login to view';
+	$uname='Login to';
 }
 ?>
 <!--
@@ -81,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="<?Php echo $uname?>,deals" class="button" />
+                    <input type="submit" name="submit" value="<?Php echo $uname?>,view" class="button" />
                 </fieldset>
             </form> 
 		</div>

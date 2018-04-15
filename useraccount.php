@@ -222,9 +222,10 @@ else{
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{ $productid = $res["productid"];
+
 				$collection2 = $db->coupons;
 				$query1 = array("id"=>"$productid");
-				$row1=$collection2->find($query);
+				$row1=$collection2->find($query1);
 				foreach($row1 as $res)
 				{
 				echo'

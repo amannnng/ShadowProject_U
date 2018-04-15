@@ -183,7 +183,52 @@ else{
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-		 
+		<!--<div class="w3l_banner_nav_right">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="w3l_banner_nav_right_banner">
+								<!--<h3>Make your <span>food</span> with Spicy.</h3>
+								<div class="more">
+									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+								</div>-->
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_nav_right_banner1">
+								<!--<h3>Make your <span>food</span> with Spicy.</h3>
+								<div class="more">
+									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+								</div>-->
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_nav_right_banner2">
+								<!--<h3>upto <i>50%</i> off.</h3>
+								<div class="more">
+									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+								</div>-->
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- flexSlider -->
+				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+				<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+				$(window).load(function(){
+				  $('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+				  });
+				});
+			  </script>
+			<!-- //flexSlider -->
+		</div> 
 	</div>
 	<script>
 			$(document).on('mouseenter', ".item_data_ellipsis", function () {
@@ -204,31 +249,25 @@ else{
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
-  $id= "5acbba16b1d5b6d96f8b4567";
-  echo $id;
 // select a database
    $db = $m->dealhunter;
-   //$uname= $_SESSION["name"];
-    $collection = $db->coupons;
-	$query = array("_id"=>"$id");
-	$row=$collection->find($query);
-	foreach ($row as $res)
-	{
-	echo $res["product"];
+   $collection = $db->coupons;
 
-	}
+
+	$row=$collection->find();
+	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
-  
+	
 //echo $date;
 	echo'<div align="center"></div>';
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3> Saved Offers</h3>
+			<h3> Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
-			{ 				
+			{
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">

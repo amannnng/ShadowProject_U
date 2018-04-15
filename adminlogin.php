@@ -89,19 +89,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>	
 <!-- login -->
-		<div class="w3_login">
-			<h3>Sign In</h3>
-			<div class="w3_login_module">
-				<div class="module form-module">
-				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-					<div class="tooltip">Click Me</div>
-				  </div>
-				  <div class="form">
-					<h2>Login to your account</h2>
-					<form action="adminlogin.php" method="post">
-					  <input type="text" name="username" placeholder="Username" required=" ">
-					  <input type="password" name="password" placeholder="Password" required=" ">
-					  <input type="submit" value="Login">
 <?php
    // connect to mongodb
    $m = new MongoClient();
@@ -144,6 +131,20 @@ else
 echo"Enter All * Parameters";
 }
 ?>
+
+		<div class="w3_login">
+			<h3>Sign In</h3>
+			<div class="w3_login_module">
+				<div class="module form-module">
+				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+					<div class="tooltip">Click Me</div>
+				  </div>
+				  <div class="form">
+					<h2>Login to your account</h2>
+					<form action="adminlogin.php" method="post">
+					  <input type="text" name="username" placeholder="Username" required=" ">
+					  <input type="password" name="password" placeholder="Password" required=" ">
+					  <input type="submit" value="Login">
 					</form>
 				  </div>
 				 

@@ -223,9 +223,12 @@ else{
 			foreach($row as $res)
 			{ $productid = $res["productid"];
 				echo $productid;
+				echo'*************';
 				$collection2 = $db->coupons;
+				echo'22222222222222222'
 				$query1 = array("_id"=>"$productid");
 				$row1=$collection2->find($query1);
+				echo'333333333';
 				foreach($row1 as $res1)
 				{
 				echo'

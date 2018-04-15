@@ -213,8 +213,10 @@ else{
 	$query = array("_id"=>"$id");
 	$row=$collection->find($query);
 	foreach ($row as $res)
-	$ee= $res["product"];
+	{
+	$ee = $res["product"];
 	echo $ee;
+	}
 	$date=new MongoDate();
   
 //echo $date;

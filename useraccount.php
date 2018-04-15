@@ -214,20 +214,7 @@ else{
 					</ul>
 				</div>
 			</section>
-			<!-- flexSlider -->
-				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-				$(window).load(function(){
-				  $('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-				  });
-				});
-			  </script>
-			<!-- //flexSlider -->
+			
 		</div>
 	</div>
 	<script>
@@ -244,6 +231,13 @@ else{
 			 });
 			$('.hideText').css('width',$('.hideText').parent().width());
 	</script>
+<div align="center"></div>';
+
+<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3> Offers</h3>
+			<div class="agile_top_brands_grids">';
 <?php
 
 // connect to mongodb
@@ -255,16 +249,9 @@ else{
 
 	$row=$collection->find(array("username"=>$uname));
 	//$date1=new MongoDate(strtotime($offerexp));
-	echo'<div align="center"></div>';
-	echo '
-<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3> Offers</h3>
-			<div class="agile_top_brands_grids">';
-		
 	foreach($row as $res)
-	{echo'
+	{
+		echo'
 		<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">

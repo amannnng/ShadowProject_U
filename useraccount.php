@@ -260,7 +260,7 @@ else{
 	foreach($row as $res)
 	{
 		if($res['_id']=="5acbba16b1d5b6d96f8b4567")
-	echo $x=true;
+			echo $x=true;
 	}
 //echo $date;
 	echo'<div align="center"></div>';
@@ -272,7 +272,6 @@ else{
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
-				$_SESSION['varname'] =$res["_id"];
 				
 				echo'
 				<div class="col-md-3 top_brand_left">

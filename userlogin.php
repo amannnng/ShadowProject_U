@@ -231,7 +231,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 		{
 			session_start();
 			$_SESSION['name']=$username;
-			header('Location: index.php');
+			//header('Location: index.php');
 		}
 		
 	}
@@ -264,7 +264,7 @@ echo"Enter All * Parameters";
 				  </div>
 				  <div class="form">
 					<h2>Create an account</h2>
-					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+					<form action="userlogin.php" method="post">
 					  <input type="text" name="fname" placeholder="Firstname" required=" ">
 					<input type="text" name="lname" placeholder="Lastname" required=" ">
 					<input type="text" name="username" placeholder="Username" required=" ">

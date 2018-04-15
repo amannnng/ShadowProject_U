@@ -118,7 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<p style="color:DodgerBlue;">Get Great Deals on many offers... </p>
+					<p style="color:DodgerBlue;">Get Great Deals on many products </p>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">

@@ -209,8 +209,8 @@ else{
    $db = $m->dealhunter;
    //$uname= $_SESSION["name"];
     $collection = $db->coupons;
-//	$query = array("username"=>"$uname");
-	$row=$collection->find();
+	$query = array("_id"=>"5acbba16b1d5b6d96f8b4567");
+	$row=$collection->find($query);
 	
 	$date=new MongoDate();
   

@@ -208,7 +208,7 @@ else{
 // select a database
    $db2 = $m2->dealhunter;
    $collection2 = $db2->userinfo;
-	$row2=$collection2->find(array("user"=>$uname));
+	$row2=$collection2->find(array("username"=>$uname));
 	foreach($row2 as $res2)
 	{
 		echo $res2["productid"];
@@ -223,9 +223,9 @@ else{
 	$row=$collection->find();
 	foreach($row as $res)
 	{
-		echo $res["product"];
+		/*echo $res["product"];
 		echo $res["_id"];
-		echo "---------";
+		echo "---------";*/
 		
 	}
 	//$date1=new MongoDate(strtotime($offerexp));

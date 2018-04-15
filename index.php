@@ -90,7 +90,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<ul>
 				<li class="dropdown profile_details_drop">
 				<?php
-session_start();
 if(isset($_SESSION["name"]))
 {
 	echo '<a href="ulogout.php" color="white">Logout</a>';

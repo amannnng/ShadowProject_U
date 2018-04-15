@@ -230,8 +230,7 @@ else{
 				$query1 = array("_id"=>"$productid");
 				$row1=$collection2->find($query1);
 				echo'333333333';
-				foreach($row1 as $res1)
-				{
+				
 					echo'///////----///';
 				echo'
 				<div class="col-md-3 top_brand_left">
@@ -263,7 +262,7 @@ else{
 						</div>
 					</div>
 				</div>';
-				}
+				
 			}echo'	
 				<div class="clearfix"> </div>
 			</div>

@@ -127,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</select>
 						<br>
 						<br>
-					<input type="text" name="description" placeholder="Description" required=" ">
+					<textarea  name="description" placeholder="Description" required=" "></textarea>
 					<input type="text" name="pricebefore" placeholder="Price Before" required=" ">
 					<input type="text" name="priceafter" placeholder="Price After" required=" ">
 					<input type="date" name="offerexp" placeholder="offerexp" required=" "><br>

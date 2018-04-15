@@ -73,7 +73,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+				<h1><a href="index.php"><span>Sale</span> Hunter</a></h1>
 			</div>
 			
 			
@@ -84,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li>Sign In & Sign Up</li>
+				<li>Sign In</li>
 			</ul>
 		</div>
 	</div>	

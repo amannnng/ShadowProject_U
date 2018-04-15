@@ -251,13 +251,17 @@ else{
   $m = new MongoClient();
 // select a database
    $db = $m->dealhunter;
-   $collection = $db->coupons;
+   $collection = $db->userinfo;
 
 
-	$row=$collection->find();
+	$row=$collection->find(array("username"=>$uname));
 	//$date1=new MongoDate(strtotime($offerexp));
-	$date=new MongoDate();
 	
+	foreach($row as $res)
+	{
+		if($res['_id']=="5acbba16b1d5b6d96f8b4567")
+	echo $x=true;
+	}
 //echo $date;
 	echo'<div align="center"></div>';
 	echo '

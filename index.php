@@ -5,7 +5,7 @@ if(isset($_SESSION["name"]))
 	$uname= $_SESSION["name"];
 }
 else{
-	$uname='Please Login';
+	$uname='Please Login to';
 }
 ?>
 <!--
@@ -81,15 +81,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="<?Php echo $uname?>,View your cart" class="button" />
                 </fieldset>
-            </form>
+            </form> 
 		</div>
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<a color="white">Hi, <?Php echo $uname?></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">

@@ -216,6 +216,13 @@ else{
 		echo $res["username"];
 		
 	echo $pid= $res["productid"];
+	 $collection2 = $db->coupons;
+	 $query2 = array("_id"=>"$pid");
+	 $row2=$collection2->find($query2);
+		foreach($row2 as $res2)
+		{
+			echo $res2["brand"];
+		}
 	}
 	$date=new MongoDate();
   

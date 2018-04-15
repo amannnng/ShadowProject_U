@@ -218,7 +218,7 @@ else{
 // select a database
    $db = $m->dealhunter;
    $collection = $db->coupons;
-	$row=$collection->find(array("_id"=>$id));
+	$row=$collection->find();
 	foreach($row as $res)
 	{
 		echo $res["product"];

@@ -239,7 +239,7 @@ else{
 		<div class="container">
 			<h3> Offers</h3>
 			<div class="agile_top_brands_grids">';
-			foreach($row as $res)
+			/*foreach($row as $res)
 			{
 				echo'
 				<div class="col-md-3 top_brand_left">
@@ -272,7 +272,7 @@ else{
 					</div>
 				</div>';
 				
-			}echo'	
+			}echo'*/	
 				<div class="clearfix"> </div>
 			</div>
 		</div>

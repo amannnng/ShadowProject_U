@@ -270,6 +270,7 @@ else{
 				echo 'Match found';
 				
 			}	
+			else{echo'error2';}
 		}
 	}
 ?> 

@@ -90,10 +90,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<li class="dropdown profile_details_drop">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
+					<a color="white">Hi, <?Php echo $uname?></a>
 						<div class="w3ls_vegetables">
-							<li>Hi, <?Php echo $uname?></li>
 							<ul class="dropdown-menu drp-mnu">
-								
+								<li><a href="adminlogin.php">Admin Login</a></li>
 								<li><a href="userlogin.php">User Login</a></li>
 							</ul>
 						</div>                  

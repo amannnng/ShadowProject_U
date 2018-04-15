@@ -13,8 +13,10 @@ else
    $collection = $db->userinfo;
 $username = $_SESSION["name"];
 $productid = $_GET["$id"];  
-			$query = array("firstname"=>"$fname","lastname"=>"$lname","username"=>"$username","email"=>"$email","password"=>"$password","phone"=>"$phone");
-			$collection->insert($query);			
+echo $username;
+echo $productid;
+			//$query = array("firstname"=>"$fname","lastname"=>"$lname","username"=>"$username","email"=>"$email","password"=>"$password","phone"=>"$phone");
+			//$collection->insert($query);			
 			header('Location: index.php');
 		
  }

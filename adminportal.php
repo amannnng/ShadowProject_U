@@ -92,7 +92,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="container">
 			<ul>
 				<li>Hi, <?Php echo $_SESSION["name"]?></li>
-				<li> echo'	<a href="logout.php">Log Out</a></li>
+				<li>You can add and delete products from here.</li>
+				<li><a href="alogout.php">Log Out</a></li>
 			</ul>
 		</div>
 	</div>	

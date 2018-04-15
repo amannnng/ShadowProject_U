@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+	$uname= $_SESSION["name"]);
+}
+else{
+	$uname='Please Login';
+}
+?>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -81,9 +91,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
+							<li>Hi, <?Php echo $uname?></li>
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="adminlogin.php">Admin Login</a></li> 
-								<li><a href="userlogin">User Login</a></li>
+								
+								<li><a href="userlogin.php">User Login</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -265,7 +276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
+											<form action="checkout.php=?'.$id.'" method="post">
 												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									

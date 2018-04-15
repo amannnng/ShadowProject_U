@@ -214,7 +214,8 @@ else{
 	foreach($row as $res)
 	{
 		echo $res["username"];
-		echo $res["productid"];
+		
+	echo $pid= $res["productid"];
 	}
 	$date=new MongoDate();
   

@@ -203,13 +203,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 		<div class="w3l_banner_nav_right">
 <!-- login -->
-		<div class="w3_login">
-			<h3>Sign In & Sign Up</h3>
-			<div class="w3_login_module">
-				<div class="module form-module">
-				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-					<div class="tooltip">Click Me</div>
-				  </div>
 <?php
    // connect to mongodb
    $m = new MongoClient();
@@ -252,6 +245,14 @@ else
 echo"Enter All * Parameters";
 }
 ?>
+
+		<div class="w3_login">
+			<h3>Sign In & Sign Up</h3>
+			<div class="w3_login_module">
+				<div class="module form-module">
+				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+					<div class="tooltip">Click Me</div>
+				  </div>
 
 				  <div class="form">
 					<h2>Login to your account</h2>

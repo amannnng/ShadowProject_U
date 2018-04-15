@@ -95,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 session_start();
 if(isset($_SESSION["name"]))
 {
-	<a href="ulogout.php">Logout</a>
+echo'	<a href="ulogout.php">Logout</a>';
 }
 else{echo'
 	

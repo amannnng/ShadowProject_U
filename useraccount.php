@@ -258,15 +258,19 @@ else{
 	
 	foreach($row as $res)
 	{
+		
 		   $m2 = new MongoClient();
 		   $db2 = $m2->dealhunter;
 		   $collection2 = $db2->coupons;
 			$row2=$collection2->find();
+			foreach($row2 as $res2)
+		{
 			if($res["_id"]==$res2["productid"])
 			{
 				echo 'Match found';
 				
-			}
+			}	
+		}
 	}
 ?> 
 <!-- //top-brands -->

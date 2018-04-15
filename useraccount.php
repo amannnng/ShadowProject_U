@@ -239,7 +239,7 @@ else{
 				{
 					
 				
-										$id = $res1["productid"];
+										$id = $res["productid"];
 										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res2["product"].'" alt=" " src="'.$res2["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
 											<div class="item_data_ellipsis hideText2">'.$res2["product"].'</div>

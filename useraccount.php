@@ -272,7 +272,7 @@ else{
 					</div>
 				</div>';
 				
-			}echo'*/	
+			}*/echo'	
 				<div class="clearfix"> </div>
 			</div>
 		</div>

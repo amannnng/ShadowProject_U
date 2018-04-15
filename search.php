@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+	$uname= $_SESSION["name"];
+}
+else{
+	$uname='Login to';
+}
+?>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -70,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="Hi,<?Php echo $uname?>" class="button" />
                 </fieldset>
             </form>
 		</div>
@@ -214,10 +224,10 @@ echo'<div align="center">';
 											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
+																						<form action="checkout.php?id='.$id.'" method="post">
 												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
-									
+								
 										</div>
 									</div>
 								</figure>

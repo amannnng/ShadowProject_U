@@ -268,6 +268,8 @@ else{
 			if($res["productid"]==$res2["_id"])
 			{
 				echo $res2["brand"];
+				echo $res2["product"];
+				echo $res2["storelocation"];
 				
 			}	
 			

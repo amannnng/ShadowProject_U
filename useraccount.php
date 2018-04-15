@@ -249,7 +249,6 @@ else{
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
-// select a database
    $db = $m->dealhunter;
    $collection = $db->userinfo;
 
@@ -259,56 +258,16 @@ else{
 	
 	foreach($row as $res)
 	{
-		if($res['_id']=="5acbba16b1d5b6d96f8b4567")
-			echo $x=true;
-	}
-//echo $date;
-	echo'<div align="center"></div>';
-	echo '
-<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3> Offers</h3>
-			<div class="agile_top_brands_grids">';
-			foreach($row as $res)
+		   $m2 = new MongoClient();
+		   $db2 = $m2->dealhunter;
+		   $collection2 = $db2->coupons;
+			$row2=$collection2->find();
+			if($res["_id"]==$res2["productid"])
 			{
+				echo 'Match found';
 				
-				echo'
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">';
-										$id = $res["_id"];
-										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res["product"].'" alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
-											<p></p>	
-											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
-											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
-											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
-											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
-											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.php?id='.$id.'" method="post">
-												<input type="submit" name="submit" value="Save for Later" class="button" />													
-											</form>
-									
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>';
-				
-			}echo'	
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>';
+			}
+	}
 ?> 
 <!-- //top-brands -->
 <!-- fresh-vegetables 

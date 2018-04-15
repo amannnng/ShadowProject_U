@@ -210,12 +210,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
 					<div class="tooltip">Click Me</div>
 				  </div>
-				  <div class="form">
-					<h2>Login to your account</h2>
-					<form action="userlogin.php" method="post">
-					  <input type="text" name="username" placeholder="Username" required=" ">
-					  <input type="password" name="password" placeholder="Password" required=" ">
-					  <input type="submit" value="Login">
 <?php
    // connect to mongodb
    $m = new MongoClient();
@@ -258,6 +252,13 @@ else
 echo"Enter All * Parameters";
 }
 ?>
+
+				  <div class="form">
+					<h2>Login to your account</h2>
+					<form action="userlogin.php" method="post">
+					  <input type="text" name="username" placeholder="Username" required=" ">
+					  <input type="password" name="password" placeholder="Password" required=" ">
+					  <input type="submit" value="Login">
 					</form>
 				  </div>
 				  <div class="form">

@@ -214,8 +214,8 @@ else{
 	$row=$collection->find($query);
 	foreach ($row as $res)
 	{
-	$ee = $res["product"];
-	echo $ee;
+	echo $res["product"];
+
 	}
 	$date=new MongoDate();
   

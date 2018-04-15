@@ -216,6 +216,18 @@ else{
 		echo "*********";
 		
 	}
+	$m = new MongoClient();
+// select a database
+   $db = $m->dealhunter;
+   $collection = $db->coupons;
+	$row=$collection->find();
+	foreach($row as $res)
+	{
+		echo $res["product"];
+		echo $res["_id"];
+		echo "---------";
+		
+	}
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	

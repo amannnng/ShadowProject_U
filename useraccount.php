@@ -268,6 +268,8 @@ else{
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
 			{
+				$_SESSION['varname'] =$res["_id"];
+				
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">

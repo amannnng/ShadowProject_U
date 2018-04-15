@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+	$uname= $_SESSION["name"];
+}
+else{
+	$uname='Login to';
+}
+?>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -78,15 +88,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<div class="mega-dropdown-menu">
-						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
-								<li><a href="adminlogin.php">Admin Login</a></li> 
-								<li><a href="userlogin">User Login</a></li>
-							</ul>
-						</div>                  
-					</div>	
+					<?php
+if(isset($_SESSION["name"]))
+{
+	echo '<a href="ulogout.php" color="white">Logout</a>';
+}
+else{
+	echo'	<a href="userlogin.php" color="white">Login</a>';
+	}
+?>	
 				</li>
 			</ul>
 		</div>
@@ -224,7 +234,7 @@ echo'<div align="center">';
 											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
+											<form action="checkout.php?id='.$id.'" method="post">
 												<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									

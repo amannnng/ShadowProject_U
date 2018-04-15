@@ -225,6 +225,8 @@ else{
 				$collection2 = $db->coupons;
 				$query1 = array("id"=>"$productid");
 				$row1=$collection2->find($query);
+				foreach($row as $res)
+				{
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
@@ -255,7 +257,7 @@ else{
 						</div>
 					</div>
 				</div>';
-				
+				}
 			}echo'	
 				<div class="clearfix"> </div>
 			</div>

@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION["name"]))
 {
-header('Location: userlogin.php');
+	header('Location: userlogin.php');
 }
 else
 {
@@ -20,10 +20,5 @@ echo $productid;
 			header('Location: index.php');
 		
  }
-else
-{
-	echo"Enter All * Parameters";
-}
-}
-}
+
 ?>

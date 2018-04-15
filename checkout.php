@@ -15,8 +15,8 @@ $username = $_SESSION["name"];
 $productid = $_GET["$id"];  
 echo $username;
 echo $productid;
-			//$query = array("firstname"=>"$fname","lastname"=>"$lname","username"=>"$username","email"=>"$email","password"=>"$password","phone"=>"$phone");
-			//$collection->insert($query);			
+			$query = array("username"=>"$username","productid"=>"$product");
+			$collection->insert($query);			
 			header('Location: index.php');
 		
  }

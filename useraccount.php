@@ -217,7 +217,7 @@ else{
 		
 	echo $pid= $res["productid"];
 	 $collection2 = $db->coupons;
-	 $query2 = array("_id"=>"$pid");
+	 $query2 = array("_id"=>"5acbba16b1d5b6d96f8b4567");
 	 $row2=$collection2->find($query2);
 		foreach($row2 as $res2)
 		{

@@ -204,9 +204,10 @@ else{
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
+  $m1 = new MongoClient();
 // select a database
    $db = $m->dealhunter;
-   
+   $db1 = $m1->dealhunter;
    $collection = $db->userinfo;
 	$query = array("username"=>"$uname");
 	$row=$collection->find($query);
@@ -224,7 +225,7 @@ else{
 			{ $productid = $res["productid"];
 				echo $productid;
 				echo'*************';
-				$collection2 = $db->coupons;
+				$collection2 = $db2->coupons;
 				echo'22222222222222222';
 				$query1 = array("_id"=>"$productid");
 				$row1=$collection2->find($query1);

@@ -205,13 +205,14 @@ else{
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
   $id= "5acbba16b1d5b6d96f8b4567";
+  echo $id;
 // select a database
    $db = $m->dealhunter;
    //$uname= $_SESSION["name"];
     $collection = $db->coupons;
 	$query = array("_id"=>"$id");
 	$row=$collection->find($query);
-	
+	echo $res["product"];
 	$date=new MongoDate();
   
 //echo $date;

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["name"]))
+{
+echo' 404 page not found';
+}
+
+
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -49,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
-<?php include_once("analyticstracking.php") ?>
+<?php include_once("analyticstracking.php") ?> 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVPZ7D9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -88,11 +96,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</ul>
 		</div>
 	</div>	
-<?php
-session_start();
-if(isset($_SESSION["name"]))
-{
-echo'
 <!-- login -->
 		<div class="w3_login">
 			<h3>Add New Product Discount</h3>
@@ -153,7 +156,7 @@ echo'
 				
 				
 				</div>
-			</div>';
+			</div>
 			<script>
 				$('.toggle').click(function(){
 				  // Switches the Icon
@@ -247,7 +250,7 @@ echo'
 		</div>
 	</div>';
 ?>
-}	</div>
+		</div>
 	</div>
 <!-- footer -->
 	<div class="footer">

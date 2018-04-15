@@ -205,7 +205,7 @@ else{
 			 });
 			$('.hideText').css('width',$('.hideText').parent().width());
 	</script>
-<div align="center"></div>';
+<div align="center"></div>
 
 <!-- top-brands -->
 	<div class="top-brands">

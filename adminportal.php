@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li>Add</li>
+				<li>Hi, <?Php echo $_SESSION["name"]?></li>
 			</ul>
 		</div>
 	</div>	

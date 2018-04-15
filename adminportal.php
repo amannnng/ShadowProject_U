@@ -51,6 +51,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <?php include_once("analyticstracking.php") ?>
 <!-- Google Tag Manager (noscript) -->
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+echo'
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVPZ7D9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -148,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				
 				
 				</div>
-			</div>
+			</div>';
 			<script>
 				$('.toggle').click(function(){
 				  // Switches the Icon
@@ -162,10 +167,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  }, "slow");
 				});
 			</script>
-		</div>
+	echo'	</div>
 <!-- //login -->
 		</div>
-		<div class="clearfix">
+		<div class="clearfix">';
 			<script>
 			$(document).on('mouseenter', ".item_data_ellipsis", function () {
 			    var $this = $(this);
@@ -242,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>';
 ?>
-		</div>
+	echo'	</div>
 	</div>
 <!-- footer -->
 	<div class="footer">
@@ -315,7 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!--</div>-->
 	</div>
 <!-- //footer -->
-<!-- Bootstrap Core JavaScript -->
+<!-- Bootstrap Core JavaScript -->';
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){

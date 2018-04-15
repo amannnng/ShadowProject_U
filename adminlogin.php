@@ -127,10 +127,10 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	{
 		if($collection->find(array("username"=>$username,"password"=>$password)))
 		{
-			//session_start();
-			//$_SESSION['name']=$username;	
-			//echo 'login success';
-			header('Location: adminportal.php');
+			session_start();
+			$_SESSION['name']=$username;	
+			echo 'login success:' $username;
+			//header('Location: adminportal.php');
 		}
 		
 	}

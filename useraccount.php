@@ -204,31 +204,14 @@ else{
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   
-   $m2 = new MongoClient();
-// select a database
-   $db2 = $m2->dealhunter;
-   $collection2 = $db2->userinfo;
-	$row2=$collection2->find(array("username"=>$uname));
-	foreach($row2 as $res2)
-	{
-		$id = $res2["productid"];
-		echo $res2["username"];
-		echo "*********";
-	$m = new MongoClient();
+   $m = new MongoClient();
 // select a database
    $db = $m->dealhunter;
-   $collection = $db->coupons;
+   $collection = $db->userinfo;
 	$row=$collection->find();
 	foreach($row as $res)
 	{
-		echo $res["product"];
-		echo $res["_id"];
-		echo "---------";
 		
-	}	
-	}
-	
-	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	
 //echo $date;
@@ -239,7 +222,7 @@ else{
 		<div class="container">
 			<h3> Offers</h3>
 			<div class="agile_top_brands_grids">';
-			/*foreach($row as $res)
+			foreach($row as $res)
 			{
 				echo'
 				<div class="col-md-3 top_brand_left">
@@ -272,7 +255,7 @@ else{
 					</div>
 				</div>';
 				
-			}*/echo'	
+			}echo'	
 				<div class="clearfix"> </div>
 			</div>
 		</div>

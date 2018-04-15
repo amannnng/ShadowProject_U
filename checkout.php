@@ -13,12 +13,11 @@ else
    $collection = $db->userinfo;
 $username = $_SESSION["name"];
 $productid = $_GET["id"];  
-echo $productid;
-/*if(isset($username) && isset($productid))
+if(isset($username) && isset($productid))
 			$query = array("username"=>"$username","productid"=>"$productid");
 			$collection->insert($query);			
 			header('Location: index.php');
-	*/	
+
  }
 
 ?>

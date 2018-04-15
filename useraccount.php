@@ -181,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    $m = new MongoClient();
    // select a database
    $db = $m->dealhunter;
-   $collection = $db->coupons;
+   $collection = $db->userinfo;
 
 if(!empty($_GET['value']))
  { 

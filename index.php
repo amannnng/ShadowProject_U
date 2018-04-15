@@ -89,7 +89,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<ul>
 				<li class="dropdown profile_details_drop">
-							<a href="userlogin.php" color="white">User Login</a>
+				<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+<a href="ulogout.php" color="white">Logout</a>
+}
+else{
+	<a href="userlogin.php" color="white">Login</a>
+}
+?>
+							
 				<!--	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">

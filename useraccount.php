@@ -204,15 +204,16 @@ else{
 // connect to mongodb
 //$m = new \MongoDB\Driver\Manager();
   $m = new MongoClient();
-  $m1 = new MongoClient();
+  
 // select a database
    $db = $m->dealhunter;
-   $db1 = $m1->dealhunter;
+   
    $collection = $db->userinfo;
 	$query = array("username"=>"$uname");
 	$row=$collection->find($query);
 	$date=new MongoDate();
-	
+	$productid=$res["productid"];
+  //$uname= $_SESSION["name"];
 //echo $date;
 	echo'<div align="center"></div>';
 	echo '
@@ -222,16 +223,7 @@ else{
 			<h3> Saved Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
-			{ $productid = $res["productid"];
-				echo $productid;
-				echo'*************';
-				$collection2 = $db1->coupons;
-				echo'22222222222222222';
-				$query1 = array("_id"=>"$productid");
-				$row1=$collection2->find($query1);
-				echo'333333333';
-				
-					echo'///////----///';
+			{ 				
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
@@ -241,14 +233,14 @@ else{
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
-										$id = $res1["_id"];
-										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res1["product"].'" alt=" " src="'.$res1["imgurl"].'" height="220px" width="220px"/></a>	
+										$id = $res["_id"];
+										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res["product"].'" alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
-											<div class="item_data_ellipsis hideText2">'.$res1["product"].'</div>
-											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res1["brand"].'</p></div>
-											<div class="item_data_ellipsis hideText2">'.$res1["description"].'</div>
-											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res1["storelocation"].'</b></p></div>
-											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res1["priceafter"].'<span style="color:red;">$'.$res1["pricebefore"].'</span></h4></p></div>
+											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
+											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
+											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
+											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.php?id='.$id.'" method="post">

@@ -77,7 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 		</div>
 		<div class="product_list_header">  
-			<form action="userlogin.php" method="post" class="last">
+			<form action="#" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
@@ -91,10 +91,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
+						<a href="userlogin.php" color="white">User Login</a></
+							<!--<ul class="dropdown-menu drp-mnu">
 								<li><a href="adminlogin.php">Admin Login</a></li>
 								<li><a href="userlogin.php">User Login</a></li>
-							</ul>
+							</ul>-->
 						</div>                  
 					</div>	
 				</li>

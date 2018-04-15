@@ -101,7 +101,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
+		<?php
+		session_start();
+if(isset($_SESSION["name"]))
+{
+echo'	<h2><a href="ulogout.php">Log Out</a></h2>';
+}
+else{
+echo'	<h2><a href="mail.html">Contact Us</a></h2>';
+}
+			
+		?>
 		</div>
 		<div class="clearfix"> </div>
 	</div>

@@ -171,7 +171,7 @@ echo"Enter All * Parameters";
 	<div class="footer">
 		
 			<div class="clearfix"> </div>
-			<div class="agile_footer_grids">
+			<!--<div class="agile_footer_grids">
 				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
 					<div class="w3_footer_grid_bottom">
 						<h4>100% secure payments</h4>
@@ -179,7 +179,7 @@ echo"Enter All * Parameters";
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
+			</div>-->
 			<div class="wthree_footer_copy">
 				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>

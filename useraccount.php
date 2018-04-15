@@ -4,7 +4,8 @@ if(!isset($_SESSION["name"]))
 {
 	header('Location: userlogin.php');
 }
-elseif(isset($_SESSION["name"]))
+
+if(isset($_SESSION["name"]))
 {
 	$uname= $_SESSION["name"];
 }

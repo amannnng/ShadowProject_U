@@ -213,8 +213,8 @@ else{
 	$row=$collection->find($query);
 	foreach($row as $res)
 	{
-		echo .$res["username"].;
-		echo .$res["productid"].;
+		echo $res["username"];
+		echo $res["productid"];
 	}
 	$date=new MongoDate();
   

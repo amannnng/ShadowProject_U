@@ -232,6 +232,7 @@ else{
 				echo'333333333';
 				foreach($row1 as $res1)
 				{
+					echo'///////----///';
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">

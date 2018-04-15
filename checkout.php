@@ -13,11 +13,27 @@ else
    $collection = $db->userinfo;
 $username = $_SESSION["name"];
 $productid = $_GET["id"];  
+$x=true;
+$row=$collection->find();
 if(isset($username) && isset($productid))
-			$query = array("username"=>"$username","productid"=>"$productid");
-			$collection->insert($query);			
-			header('Location: index.php');
-
+{
+	foreach($row as $res)
+	{
+		if($res['productid']==$productid)
+		$x=false;
+	}
+	if($x)
+	{
+		$query = array("username"=>"$username","productid"=>"$productid");
+		$collection->insert($query);			
+		header('Location: index.php');
+	}
+	else
+	{
+		echo"username already exist";		
+	}
+			
+}
  }
 
 ?>

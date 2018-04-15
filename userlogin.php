@@ -1,3 +1,45 @@
+<?php
+   // connect to mongodb
+   $m = new MongoClient();
+   // select a database
+   $db = $m->dealhunter;
+   $collection = $db->users;
+
+
+
+if(!empty($_POST['username']) && !empty($_POST['password']))
+{
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$password_hash = md5($password);
+
+	$x=false;
+	$row=$collection->find(array("username"=>$username));
+	foreach($row as $res)
+	{
+		if($res['password']==$password)
+		$x=true;
+	}
+	if($x)
+	{
+		if($collection->find(array("username"=>$username,"password"=>$password)))
+		{
+			session_start();
+			$_SESSION['name']=$username;
+			header('Location: index.php');
+		}
+		
+	}
+	else
+	{
+		echo"enter correct username and password";
+	}
+}
+else
+{
+echo"Enter All * Parameters";
+}
+?>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -203,48 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 		<div class="w3l_banner_nav_right">
 <!-- login -->
-<?php
-   // connect to mongodb
-   $m = new MongoClient();
-   // select a database
-   $db = $m->dealhunter;
-   $collection = $db->users;
 
-
-
-if(!empty($_POST['username']) && !empty($_POST['password']))
-{
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$password_hash = md5($password);
-
-	$x=false;
-	$row=$collection->find(array("username"=>$username));
-	foreach($row as $res)
-	{
-		if($res['password']==$password)
-		$x=true;
-	}
-	if($x)
-	{
-		if($collection->find(array("username"=>$username,"password"=>$password)))
-		{
-			session_start();
-			$_SESSION['name']=$username;
-			//header('Location: index.php');
-		}
-		
-	}
-	else
-	{
-		echo"enter correct username and password";
-	}
-}
-else
-{
-echo"Enter All * Parameters";
-}
-?>
 
 		<div class="w3_login">
 			<h3>Sign In & Sign Up</h3>

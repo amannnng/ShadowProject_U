@@ -129,7 +129,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 		{
 			session_start();
 			$_SESSION['name']=$username;	
-			echo 'login success:' $username;
+			echo $username;
 			//header('Location: adminportal.php');
 		}
 		

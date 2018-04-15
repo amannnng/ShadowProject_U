@@ -255,7 +255,13 @@ else{
 
 	$row=$collection->find(array("username"=>$uname));
 	//$date1=new MongoDate(strtotime($offerexp));
-	
+	echo'<div align="center"></div>';
+	echo '
+<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3> Offers</h3>
+			<div class="agile_top_brands_grids">';
 	foreach($row as $res)
 	{
 		
@@ -267,13 +273,44 @@ else{
 		{
 			if($res["productid"]==$res2["_id"])
 			{
-				echo $res2["brand"];
-				echo $res2["product"];
-				echo $res2["storelocation"];
+				echo'
+				<div class="col-md-3 top_brand_left">
+					<div class="hover14 column">
+						<div class="agile_top_brand_left_grid">
+							
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block" >
+										<div class="snipcart-thumb">';
+										$id = $res2["_id"];
+										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res2["product"].'" alt=" " src="'.$res2["imgurl"].'" height="220px" width="220px"/></a>	
+											<p></p>	
+											<div class="item_data_ellipsis hideText2">'.$res2["product"].'</div>
+											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res2["brand"].'</p></div>
+											<div class="item_data_ellipsis hideText2">'.$res2["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res2["storelocation"].'</b></p></div>
+											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res2["priceafter"].'<span style="color:red;">$'.$res2["pricebefore"].'</span></h4></p></div>
+										</div>
+										<div class="snipcart-details top_brand_home_details">
+											<form action="checkout.php?id='.$id.'" method="post">
+												<input type="submit" name="submit" value="Save for Later" class="button" />													
+											</form>
+									
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>';
 				
 			}	
 			
-		}
+		}}echo'	
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>';
 	}
 ?> 
 <!-- //top-brands -->

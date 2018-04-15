@@ -206,11 +206,10 @@ else{
   $m = new MongoClient();
 // select a database
    $db = $m->dealhunter;
-   $collection = $db->coupons;
-
-
-	$row=$collection->find();
-	//$date1=new MongoDate(strtotime($offerexp));
+   
+   $collection = $db->userinfo;
+	$query = array("username"=>"$uname");
+	$row=$collection->find($query);
 	$date=new MongoDate();
 	
 //echo $date;
@@ -219,10 +218,13 @@ else{
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3> Offers</h3>
+			<h3> Saved Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
-			{
+			{ $productid = $res["productid"];
+				$collection2 = $db2->coupons;
+				$query1 = array("id"=>"$productid");
+				$row1=$collection2->find($query);
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">

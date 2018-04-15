@@ -88,6 +88,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</ul>
 		</div>
 	</div>	
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+echo'
 <!-- login -->
 		<div class="w3_login">
 			<h3>Add New Product Discount</h3>
@@ -148,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				
 				
 				</div>
-			</div>
+			</div>';
 			<script>
 				$('.toggle').click(function(){
 				  // Switches the Icon
@@ -242,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>';
 ?>
-		</div>
+}	</div>
 	</div>
 <!-- footer -->
 	<div class="footer">

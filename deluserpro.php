@@ -8,7 +8,7 @@
 //	$row=$collection->find(array("productid"=>$id));
 	$collection->remove(array("productid"=>$id));
 		echo''
-	echo'<script language="javascript" type="text/javascript">alert("Your Coupon Has Been Deleted Successfully.");</script>';
+	//echo'<script language="javascript" type="text/javascript">alert("Your Coupon Has Been Deleted Successfully.");</script>';
 	header("location:useraccount.php");
 ?>
       

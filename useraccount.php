@@ -213,9 +213,7 @@ else{
 		echo $res["product"];
 		echo $res["_id"];
 		echo "---------";
-		
-	}
-   $m2 = new MongoClient();
+		$m2 = new MongoClient();
 // select a database
    $db2 = $m2->dealhunter;
    $collection2 = $db2->userinfo;
@@ -227,6 +225,8 @@ else{
 		echo "*********";
 		
 	}
+	}
+   
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	

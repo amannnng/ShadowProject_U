@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				
 				
 				</div>
-			</div>';
+			</div>
 			<script>
 				$('.toggle').click(function(){
 				  // Switches the Icon
@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  }, "slow");
 				});
 			</script>
-	echo'	</div>
+		</div>
 <!-- //login -->
 		</div>
 		<div class="clearfix">';
@@ -247,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>';
 ?>
-	echo'	</div>
+		</div>
 	</div>
 <!-- footer -->
 	<div class="footer">

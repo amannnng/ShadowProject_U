@@ -79,11 +79,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="product_list_header">  
 			<form action="useraccount.php" method="post" class="last">
                 <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
+                    <!--<input type="hidden" name="cmd" value="_cart" />-->
                     <input type="hidden" name="display" value="1" />
                     <input type="submit" name="submit" value="Hi,<?Php echo $uname?>" class="button" />
                 </fieldset>
-            </form>
+            </form> 
 		</div>
 		<div class="w3l_header_right">
 			<ul>

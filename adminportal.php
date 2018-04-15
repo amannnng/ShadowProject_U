@@ -92,6 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="container">
 			<ul>
 				<li>Hi, <?Php echo $_SESSION["name"]?></li>
+				<li> echo'	<a href="logout.php">Log Out</a></li>
 			</ul>
 		</div>
 	</div>	

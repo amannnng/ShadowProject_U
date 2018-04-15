@@ -262,9 +262,17 @@ else{
 		<div class="container">
 			<h3> Offers</h3>
 			<div class="agile_top_brands_grids">';
+		
 	foreach($row as $res)
 	{
-		
+		<div class="col-md-3 top_brand_left">
+					<div class="hover14 column">
+						<div class="agile_top_brand_left_grid">
+							
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block" >
+										<div class="snipcart-thumb">';
 		   $m2 = new MongoClient();
 		   $db2 = $m2->dealhunter;
 		   $collection2 = $db2->coupons;
@@ -275,14 +283,7 @@ else{
 				if($res["productid"]==$res2["_id"])
 				{
 					echo'
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">';
+				
 										$id = $res2["_id"];
 										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res2["product"].'" alt=" " src="'.$res2["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	

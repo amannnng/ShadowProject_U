@@ -206,10 +206,27 @@ else{
   $m = new MongoClient();
 // select a database
    $db = $m->dealhunter;
-   $collection = $db->coupons,userinfo;
-
-
+   $collection = $db->coupons;
 	$row=$collection->find();
+	foreach($row as $res)
+	{
+		echo $res["product"];
+		echo $res["_id"];
+		echo "---------";
+		
+	}
+   $m2 = new MongoClient();
+// select a database
+   $db2 = $m2->dealhunter;
+   $collection2 = $db2->userinfo;
+	$row2=$collection2->find(array());
+	foreach($row2 as $res2)
+	{
+		echo $res2["productid"];
+		echo $res2["username"];
+		echo "*********";
+		
+	}
 	//$date1=new MongoDate(strtotime($offerexp));
 	$date=new MongoDate();
 	

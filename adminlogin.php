@@ -103,7 +103,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					  <input type="password" name="password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
 <?php
-
    // connect to mongodb
    $m = new MongoClient();
  // select a database
@@ -128,8 +127,8 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	{
 		if($collection->find(array("username"=>$username,"password"=>$password)))
 		{
-			session_start();
-			$_SESSION['name']=$username;	
+			//session_start();
+			//$_SESSION['name']=$username;	
 			//echo 'login success';
 			header('Location: adminportal.php');
 		}

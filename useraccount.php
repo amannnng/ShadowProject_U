@@ -206,7 +206,7 @@ else{
   $m = new MongoClient();
 // select a database
    $db = $m->dealhunter;
-   $collection = $db->coupons;
+   $collection = $db->coupons,userinfo;
 
 
 	$row=$collection->find();

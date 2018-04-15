@@ -96,8 +96,8 @@ if(isset($_SESSION["name"]))
 	echo '<a href="ulogout.php" color="white">Logout</a>';
 }
 else{
-	echo'	<a href="userlogin.php" color="white">Login</a>;'
-	};
+	echo'	<a href="userlogin.php" color="white">Login</a>';
+	}
 ?>
 							
 				<!--	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>

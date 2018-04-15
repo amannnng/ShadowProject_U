@@ -86,10 +86,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </form> 
 		</div>
 		<div class="w3l_header_right">
-			<a href="userlogin.php" color="white">User Login</a>
-			<!--<ul>
+
+			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+							<a href="userlogin.php" color="white">User Login</a>
+				<!--	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 						
@@ -99,8 +100,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</ul>
 						</div>                  
 					</div>	
-				</li>
-			</ul>-->
+				</li>-->
+			</ul>
 		</div>
 		<div class="w3l_header_right1">
 			<h2><a href="mail.html">Contact Us</a></h2>

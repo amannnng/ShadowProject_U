@@ -250,7 +250,7 @@ else{
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="deluserpro.php?id='.$id.'" method="post">
-												<input type="submit" name="submit" value="Save for Later" class="button" />													
+												<input type="submit" name="submit" value="Delete" class="button" />													
 											</form>
 									
 										</div>

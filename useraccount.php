@@ -225,7 +225,7 @@ else{
 				$collection2 = $db->coupons;
 				$query1 = array("id"=>"$productid");
 				$row1=$collection2->find($query);
-				foreach($row as $res)
+				foreach($row1 as $res)
 				{
 				echo'
 				<div class="col-md-3 top_brand_left">
@@ -237,13 +237,13 @@ else{
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">';
 										$id = $res["_id"];
-										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res["product"].'" alt=" " src="'.$res["imgurl"].'" height="220px" width="220px"/></a>	
+										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res1["product"].'" alt=" " src="'.$res1["imgurl"].'" height="220px" width="220px"/></a>	
 											<p></p>	
-											<div class="item_data_ellipsis hideText2">'.$res["product"].'</div>
-											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res["brand"].'</p></div>
-											<div class="item_data_ellipsis hideText2">'.$res["description"].'</div>
-											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
-											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
+											<div class="item_data_ellipsis hideText2">'.$res1["product"].'</div>
+											<div class="item_data_ellipsis hideText2"><p><i><h6>from </h6></i>'.$res1["brand"].'</p></div>
+											<div class="item_data_ellipsis hideText2">'.$res1["description"].'</div>
+											<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res1["storelocation"].'</b></p></div>
+											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res1["priceafter"].'<span style="color:red;">$'.$res1["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.php?id='.$id.'" method="post">

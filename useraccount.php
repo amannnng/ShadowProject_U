@@ -202,10 +202,7 @@ else{
 <div align="center"></div>';
 
 <!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3> Offers</h3>
-			<div class="agile_top_brands_grids">';
+	
 <?php
 
 // connect to mongodb
@@ -219,7 +216,10 @@ else{
 	//$date1=new MongoDate(strtotime($offerexp));
 	foreach($row as $res)
 	{
-		echo'
+		echo'<div class="top-brands">
+		<div class="container">
+			<h3> Offers</h3>
+			<div class="agile_top_brands_grids">
 		<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">

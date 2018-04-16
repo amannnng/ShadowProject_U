@@ -205,13 +205,6 @@ else{
 			 });
 			$('.hideText').css('width',$('.hideText').parent().width());
 	</script>
-<div align="center"></div>
-
-<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3> Offers</h3>
-			<div class="agile_top_brands_grids">
 <?php
 
 // connect to mongodb
@@ -223,6 +216,14 @@ else{
 
 	$row=$collection->find(array("username"=>$uname));
 	//$date1=new MongoDate(strtotime($offerexp));
+//echo $date;
+	echo'<div align="center"></div>';
+	echo '
+<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3> Offers</h3>
+			<div class="agile_top_brands_grids">';
 	foreach($row as $res)
 	{
 		
@@ -269,12 +270,12 @@ else{
 				
 				}	
 			
-			}echo'	
+			}
+	}echo'	
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>';
-	}
 ?> 
 <!-- //top-brands -->
 <!-- fresh-vegetables 

@@ -170,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<form action="login.php" method="post">
 					  <input type="text" name="username" placeholder="Username" required=" ">
 					  <input type="password" name="password" placeholder="Password" required=" ">
-					  <?php $msg; echo $_GET["msg"];?>
+					  <?php if(isset($_GET["msg"])){echo $_GET["msg"];}?>
 					  <input type="submit" value="Login">
 					</form>
 				  </div>

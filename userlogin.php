@@ -124,9 +124,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- //products-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
-		<div class="w3l_banner_nav_left">
+		<!--<div class="w3l_banner_nav_left">
 		<nav class="navbar nav_bottom">
-			 <!-- Brand and toggle get grouped for better mobile display -->
+			 <!-- Brand and toggle get grouped for better mobile display --
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 					<span class="sr-only">Toggle navigation</span>
@@ -135,7 +135,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<span class="icon-bar"></span>
 				  </button>
 			   </div> 
-			   <!-- Collect the nav links, forms, and other content for toggling -->
+			   <!-- Collect the nav links, forms, and other content for toggling --
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
@@ -149,9 +149,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li><a href="navlist.php?value=decor">Decor</a></li>
 					
 					</ul>
-				 </div><!-- /.navbar-collapse -->
+				 </div><!-- /.navbar-collapse --
 			</nav>
-		</div>
+		</div>-->
 		<div class="w3l_banner_nav_right">
 	
 <!-- login -->

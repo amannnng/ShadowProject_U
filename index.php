@@ -288,7 +288,7 @@ else{
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.php?id='.$id.'" method="post">';
-											 if(null!==$msg=$_GET["msg1"]){echo $msg; unset($msg);}
+										//	 if(null!==$msg=$_GET["msg1"]){echo $msg; unset($msg);}
 											echo'	<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									

@@ -270,7 +270,7 @@ else{
 				}	
 			
 			}echo'	
-				<div class="clearfix"> </div>
+				<!--<div class="clearfix"> </div>-->
 			</div>
 		</div>
 	</div>';

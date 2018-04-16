@@ -37,7 +37,7 @@ window.setTimeout(function() {
   }, 20);
 </script>';
 
- // header('Location: index.php');
+ header('Location: index.php');
 	}
 			
 }

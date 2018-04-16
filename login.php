@@ -35,6 +35,10 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 		echo '<script language="javascript">';
 echo 'alert("Login Failed")';
 echo '</script>';
+function msleep(3.0)
+{
+    usleep($time * 1000000);
+}
 		//header('Location: userlogin.php');
 	}
 }

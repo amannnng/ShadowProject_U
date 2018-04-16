@@ -287,9 +287,9 @@ else{
 											<div class="item_data_ellipsis hideText2"><p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p></div>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.php?id='.$id.'" method="post">
+											<form action="checkout.php?id='.$id.'" method="post">';
 											<?php if(isset($_GET["msg1"])){echo $_GET["msg1"];}?>
-												<input type="submit" name="submit" value="Save for Later" class="button" />													
+											echo'	<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									
 										</div>

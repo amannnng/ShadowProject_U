@@ -32,7 +32,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	}
 	else
 	{
-header('Location: userlogin.php?msg="LoginFailed"');
+header('Location: userlogin.php?msg=LoginFailed');
 	}
 }
 else

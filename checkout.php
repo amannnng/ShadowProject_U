@@ -30,10 +30,14 @@ if(isset($username) && isset($productid))
 	}
 	else
 	{
-		echo"username already exist";		
+		//echo"coupon already exist";		
+		echo '<script language="javascript">';
+  echo 'alert(coupon already exist)';  //not showing an alert box.
+  echo '</script>';
+  header('Location: index.php');
 	}
 			
 }
- }
+}
 
 ?>

@@ -56,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
+			<a href="index.php">Go Back To Home</a>
 		</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -112,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 <!-- //header -->
-<!-- products-breadcrumb -->
+<!-- products-breadcrumb -
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>

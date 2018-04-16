@@ -136,9 +136,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<br>
 						<select name="storelocation">
 							<option selected="selected">Select Store</option>
-							<option value="HEB">Heb</option>
+							<option value="HEB">Target</option>
 							<option value="Bestbuy">Best Buy</option>
 							<option value="Walmart">Walmart</option>
+							<option value="Walmart">Home Depo</option>
 						</select>
 						<br>
 						<br>

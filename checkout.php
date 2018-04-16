@@ -34,7 +34,7 @@ if(isset($username) && isset($productid))
 		echo '<script language="javascript">';
   echo 'alert(coupon already exist)';  //not showing an alert box.
   echo '</script>';
-  header('Location: index.php');
+  //header('Location: index.php');
 	}
 			
 }

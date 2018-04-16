@@ -259,7 +259,7 @@ else
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- newsletter-top-serv-btm -->
+<!-- newsletter-top-serv-btm 
 	<div class="newsletter-top-serv-btm">
 		<div class="container">
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
@@ -291,7 +291,7 @@ else
 	</div>
 <!-- //newsletter-top-serv-btm -->
 <!-- newsletter -->
-	<div class="newsletter">
+	<!--<div class="newsletter">
 		<div class="container">
 			<div class="w3agile_newsletter_left">
 				<h3>sign up for our newsletter</h3>
@@ -304,11 +304,12 @@ else
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-	</div>
+	</div>-->
 <!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">
-		<div class="container">
+		<!--<div class="container">-->
+			<!--
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
@@ -369,11 +370,11 @@ else
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
+			</div>-->
 			<div class="wthree_footer_copy">
-				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 Sale Hunter Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
-		</div>
+		<!--</div>-->
 	</div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->

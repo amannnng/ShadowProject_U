@@ -32,11 +32,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	}
 	else
 	{
-		echo '<script language="javascript">';
-echo 'alert("Login Failed")';
-echo '</script>';
-sleep(4);
-header('Location: userlogin.php');
+header('Location: userlogin.php?msg="LoginFailed"');
 	}
 }
 else

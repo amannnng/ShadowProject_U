@@ -31,11 +31,7 @@ if(isset($username) && isset($productid))
 	else
 	{
 		//echo"coupon already exist";		
-		echo '<script>
-window.setTimeout(function() {
-    window.location = ';echo'index.php';echo'
-  }, 20);
-</script>';
+		
 
  header('Location: index.php');
 	}

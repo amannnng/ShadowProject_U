@@ -34,7 +34,7 @@ if(isset($username) && isset($productid))
 		echo '<script>
 window.setTimeout(function() {
     window.location = ';echo'index.php';echo'
-  }, 2000);
+  }, 20);
 </script>';
 
  // header('Location: index.php');

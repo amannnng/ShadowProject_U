@@ -225,15 +225,7 @@ else{
 	//$date1=new MongoDate(strtotime($offerexp));
 	foreach($row as $res)
 	{
-		echo'
-		<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">';
+		
 		   $m2 = new MongoClient();
 		   $db2 = $m2->dealhunter;
 		   $collection2 = $db2->coupons;
@@ -243,7 +235,15 @@ else{
 			
 				if($res["productid"]==$res2["_id"])
 				{
-					
+					echo'
+		          <div class="col-md-3 top_brand_left">
+					<div class="hover14 column">
+						<div class="agile_top_brand_left_grid">
+							
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block" >
+										<div class="snipcart-thumb">';
 				
 										$id = $res["productid"];
 										echo'<a href="single.php?id='.$id.'"><img title="Click to see details of '.$res2["product"].'" alt=" " src="'.$res2["imgurl"].'" height="220px" width="220px"/></a>	
@@ -270,7 +270,7 @@ else{
 				}	
 			
 			}echo'	
-				<!--<div class="clearfix"> </div>-->
+				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>';

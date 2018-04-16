@@ -30,10 +30,7 @@ if(isset($username) && isset($productid))
 	}
 	else
 	{
-		//echo"coupon already exist";		
-		
-
- header('Location: index.php');
+		 header('Location: index.php?msg1=Coupon already exist');
 	}
 			
 }

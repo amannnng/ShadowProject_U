@@ -152,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				 </div><!-- /.navbar-collapse --
 			</nav>
 		</div>-->
-		<div class="w3l_banner_nav_right">
+		<!--<div class="w3l_banner_nav_right">-->
 	
 <!-- login -->
 
@@ -254,7 +254,7 @@ else
 			</script>
 		</div>
 <!-- //login -->
-		</div>
+		<!--</div>-->
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->

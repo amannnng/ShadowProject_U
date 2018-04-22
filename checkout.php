@@ -25,8 +25,14 @@ if(isset($username) && isset($productid))
 	if($x)
 	{
 		$query = array("username"=>"$username","productid"=>"$productid");
-		$collection->insert($query);			
-		header('Location: index.php?msg1=Saved Successfully');
+		$collection->insert($query);	
+			
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Succesfully Registered')
+    window.location.href='index.php';
+    </SCRIPT>");
+
+		//header('Location: index.php?msg1=Saved Successfully');
 	}
 	else
 	{

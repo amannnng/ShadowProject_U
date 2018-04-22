@@ -1,6 +1,13 @@
 <?php
 session_start();
-if(!isset($_SESSION["name"]))
+$check = $_SESSION["name"]
+ $m = new MongoClient();
+ 
+   $db = $m->dealhunter;
+   
+   $collection = $db->admin;
+   $row=$collection->find("username"=>$check);
+if(!isset($_SESSION["name"])&& !isset($row))
 {
 	header('Location: adminlogin.php');
 }

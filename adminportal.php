@@ -1,7 +1,7 @@
 <?php
 session_start();
-$check = $_SESSION["name"]
- $m = new MongoClient();
+$check = $_SESSION["name"];
+$m = new MongoClient();
  
    $db = $m->dealhunter;
    

@@ -1,14 +1,13 @@
 <?php
 session_start();
-if($_SESSION["name"]=="admin")
-{
-session_destroy();		
-}
-
 if(isset($_SESSION["name"]))
 {
 
 	$uname= $_SESSION["name"];
+	if($uname=="admin")
+	{
+		session_destroy();		
+	}
 }
 else{
 	$uname='Login to';

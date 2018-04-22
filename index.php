@@ -267,7 +267,7 @@ else{
 			<h3> Offers</h3>
 			<div class="agile_top_brands_grids">';
 			foreach($row as $res)
-			{$msg="";
+			{
 				echo'
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
@@ -288,7 +288,7 @@ else{
 										</div>
 										<div class="snipcart-details top_brand_home_details">
 											<form action="checkout.php?id='.$id.'" method="post">';
-											 if(null!==$msg=$_GET["msg1"]){echo $msg;}
+											
 											echo'	<input type="submit" name="submit" value="Save for Later" class="button" />													
 											</form>
 									

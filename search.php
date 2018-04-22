@@ -193,8 +193,9 @@ echo'<div align="center">';
 	echo '
 <!-- top-brands -->
 	<div class="top-brands">
-		<div class="container">';
-			
+		<div class="container">
+				<h3>Offers Found</h3>
+				<div class="agile_top_brands_grids">';
 			$itemCount = $row->count();
 			
 			if(!($itemCount == 0))
@@ -204,8 +205,7 @@ echo'<div align="center">';
 				{
 				
 				echo'
-				<h3>Offers Found</h3>
-				<div class="agile_top_brands_grids">
+				
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">

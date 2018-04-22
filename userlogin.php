@@ -136,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<!--<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
 						<li><a href="navlist.php?value=electronics">Electronics</a></li>
@@ -149,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li><a href="navlist.php?value=decor">Decor</a></li>
 					
 					</ul>
-				 </div><!-- /.navbar-collapse -->
+				 </div>--><!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">

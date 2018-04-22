@@ -28,7 +28,7 @@ if(isset($username) && isset($productid))
 		$collection->insert($query);	
 			
     echo ("<SCRIPT LANGUAGE='JavaScript'>
-    window.alert('Succesfully Registered')
+    window.alert('Succesfully Saved')
     window.location.href='index.php';
     </SCRIPT>");
 
@@ -36,7 +36,10 @@ if(isset($username) && isset($productid))
 	}
 	else
 	{
-		 header('Location: index.php?msg1=Coupon already exist');
+		 echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Already Exist')
+    window.location.href='index.php';
+    </SCRIPT>");
 	}
 			
 }

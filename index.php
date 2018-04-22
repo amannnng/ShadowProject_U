@@ -4,10 +4,6 @@ if(isset($_SESSION["name"]))
 {
 
 	$uname= $_SESSION["name"];
-	if($uname=="admin")
-	{
-		session_destroy();		
-	}
 }
 else{
 	$uname='Login to';

@@ -96,7 +96,10 @@ if(!empty($_POST['subcategory']) &&!empty($_POST['brand']) && !empty($_POST['pro
 	{
 		 $query = array("imgurl"=>"$pathInS3","brand"=>"$brand","product"=>"$product","category"=>"$category","subcategory"=>"$subcategory","description"=>"$description","pricebefore"=>"$pricebefore","priceafter"=>"$priceafter","offerexp"=>"$offerexp","storelocation"=>"$storelocation");
 		 $collection->insert($query);
-		 echo'insert success';			
+		 echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Succesfully Added')
+    window.location.href='adminportal.php';
+    </SCRIPT>");			
 		 //header('Location: index.php');
 		
 	}

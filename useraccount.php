@@ -173,7 +173,7 @@ else{
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<!--<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
 					
 						<li><a href="navlist.php?value=electronics">Electronics</a></li>
@@ -186,7 +186,7 @@ else{
 						<li><a href="navlist.php?value=decor">Decor</a></li>
 					
 					</ul>
-				 </div><!-- /.navbar-collapse -->
+				 </div>--><!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		

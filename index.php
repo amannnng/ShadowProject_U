@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION["name"]==admin)
+if($_SESSION["name"]=="admin")
 {
 session_destroy();		
 }

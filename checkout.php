@@ -26,7 +26,7 @@ if(isset($username) && isset($productid))
 	{
 		$query = array("username"=>"$username","productid"=>"$productid");
 		$collection->insert($query);			
-		header('Location: index.php');
+		header('Location: index.php?msg1=Saved Successfully');
 	}
 	else
 	{

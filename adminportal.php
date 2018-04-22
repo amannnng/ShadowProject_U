@@ -9,9 +9,9 @@ $x=false;
 foreach($row as $res)
 	{
 		if($res['username']==$check)
-		$x=false;
+		$x=true;
 	}
-if(!isset($_SESSION["name"]) && $x==false)
+if(!isset($_SESSION["name"]) || $x==false)
 {
 	header('Location: adminlogin.php');
 }

@@ -2,12 +2,16 @@
 session_start();
 $check = $_SESSION["name"];
 $m = new MongoClient();
- 
-   $db = $m->dealhunter;
-   
-   $collection = $db->admin;
-   $row=$collection->find(array("username"=>$check));
-if(!isset($_SESSION["name"])&& !isset($row))
+$db = $m->dealhunter;
+$collection = $db->admin;
+$row=$collection->find(array("username"=>$check));
+$x=false;
+foreach($row as $res)
+	{
+		if($res['username']==$check)
+		$x=true;
+	}
+if(!isset($_SESSION["name"]) && $x!=true)
 {
 	header('Location: adminlogin.php');
 }

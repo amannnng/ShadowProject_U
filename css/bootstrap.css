@@ -1563,6 +1563,7 @@ pre {
   background-color: white;
   border: 1px solid white;
   border-radius: 4px;
+  white-space: pre-wrap;
 }
 pre code {
   padding: 0;
@@ -1574,7 +1575,7 @@ pre code {
 }
 .pre-scrollable {
   max-height: 340px;
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
 }
 .container {
   padding-right: 15px;

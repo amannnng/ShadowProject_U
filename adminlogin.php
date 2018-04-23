@@ -125,10 +125,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 		header('Location: adminlogin.php?msg=Inavalid Credentials. Login Failed.');
 	}
 }
-else
-{
-echo"Enter All * Parameters";
-}
+
 ?>
 
 		<div class="w3_login">
@@ -143,6 +140,7 @@ echo"Enter All * Parameters";
 					<form action="adminlogin.php" method="post">
 					  <input type="text" name="username" placeholder="Username" required=" ">
 					  <input type="password" name="password" placeholder="Password" required=" ">
+					  <?php if(isset($_GET["msg"])){echo $_GET["msg"];}?>
 					  <input type="submit" value="Login">
 					</form>
 				  </div>

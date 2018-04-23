@@ -322,7 +322,7 @@ $id=$_GET["id"];
 						<h4>Description :</h4>
 						<pre>'.$res["description"].'.</pre>
 					</div>
-					<div class="item_data_ellipsis hideText2"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
+					<div class="snipcart-thumb agileinfo_single_right_snipcart"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
 							<p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p>

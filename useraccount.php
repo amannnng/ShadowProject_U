@@ -82,15 +82,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</form>
 	
 		</div>
+		<?php
+if(isset($_SESSION["name"]))
+{
+	echo '
 		<div class="product_list_header">  
 			<form action="useraccount.php" method="post" class="last">
                 <fieldset>
                     <!--<input type="hidden" name="cmd" value="_cart" />-->
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="Hi,<?Php echo $uname?>" class="button" />
+                    <input type="submit" name="submit" value="Check your saved deals, '.$uname.'" class="button" />
                 </fieldset>
             </form> 
 		</div>
+
+		';
+}
+?>
 		<div class="w3l_header_right">
 
 			<ul>
@@ -101,7 +109,18 @@ if(isset($_SESSION["name"]))
 	echo '<a href="ulogout.php" color="white">Logout</a>';
 }
 else{
-	echo'	<a href="userlogin.php" color="white">Login</a>';
+	echo'	
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+						
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="adminlogin.php">Admin Login</a></li>
+								<li><a href="userlogin.php">User Login</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>';
 	}
 ?>
 							
@@ -151,7 +170,7 @@ else{
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+123) 234 567</li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:admin@salehunter.online">admin@salehunter.online</a></li>
 				</ul>
 			</div>

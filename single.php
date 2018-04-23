@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION["name"]))
+{
+	$uname= $_SESSION["name"];
+}
+else{
+	$uname='Login to';
+}
+?>
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -57,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="index.php">Go Back To Home</a>
+			<a href="index.php">Home</a>
 		</div>
 		<div class="w3l_search">
 			<form action="search.php" method="post">
@@ -66,28 +76,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</form>
 	
 		</div>
+		<?php
+if(isset($_SESSION["name"]))
+{
+	echo '
 		<div class="product_list_header">  
-			<form action="#" method="post" class="last">
+			<form action="useraccount.php" method="post" class="last">
                 <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
+                    <!--<input type="hidden" name="cmd" value="_cart" />-->
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="Check your saved deals, '.$uname.'" class="button" />
                 </fieldset>
-            </form>
+            </form> 
 		</div>
+
+		';
+}
+?>
 		<div class="w3l_header_right">
+
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+				<?php
+if(isset($_SESSION["name"]))
+{
+	echo '<a href="ulogout.php" color="white">Logout</a>';
+}
+else{
+	echo'	
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
+						
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="adminlogin.php">Admin Login</a></li> 
-								<li><a href="userlogin">User Login</a></li>
+								<li><a href="adminlogin.php">Admin Login</a></li>
+								<li><a href="userlogin.php">User Login</a></li>
 							</ul>
 						</div>                  
 					</div>	
-				</li>
+				</li>';
+	}
+?>
+							
+				<!--	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+						
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="adminlogin.php">Admin Login</a></li>
+								<li><a href="userlogin.php">User Login</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>-->
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
@@ -123,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+123) 234 567</li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:admin@salehunter.online">admin@salehunter.online</a></li>
 				</ul>
 			</div>

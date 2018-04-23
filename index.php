@@ -86,7 +86,7 @@ if(isset($_SESSION["name"]))
                 <fieldset>
                     <!--<input type="hidden" name="cmd" value="_cart" />-->
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="Check Your Saved Deals, '.$uname.'" class="button" />
+                    <input type="submit" name="submit" value="Check your saved deals, '.$uname.'" class="button" />
                 </fieldset>
             </form> 
 		</div>

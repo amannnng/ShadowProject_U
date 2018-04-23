@@ -145,7 +145,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 					</form>
 				  </div>
 				 
-				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				  
 				</div>
 			</div>
 			<script>

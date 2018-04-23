@@ -124,6 +124,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<select name="category">
 							<option selected="selected">Select categary</option>
 							<option value="electronics">Electronics</option>
+								<li>
 								<select name="subcategory">
 							<option selected="selected">Select categary</option>
 							<option value="mobile">Mobile</option>
@@ -134,6 +135,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<option value="homeappliance">Home Appliance</option>
 							<option value="decor">Decor</option>
 						</select>
+								</li>
 							<option value="home">Home</option>
 						</select>
 						<select name="subcategory">

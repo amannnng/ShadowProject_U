@@ -320,8 +320,9 @@ $id=$_GET["id"];
 				<div class="col-md-8 agileinfo_single_right">
 					<div class="w3agile_description">
 						<h4>Description :</h4>
-						<p>'.$res["description"].'.</p>
+						<pre>'.$res["description"].'.</pre>
 					</div>
+					<div class="snipcart-thumb agileinfo_single_right_snipcart"><p>Get in <b>'.$res["storelocation"].'</b></p></div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
 							<p><h4 style="color:green;">$'.$res["priceafter"].'<span style="color:red;">$'.$res["pricebefore"].'</span></h4></p>

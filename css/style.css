@@ -2374,7 +2374,7 @@ ul.wmuSliderPagination {
 	font-size: 1.8em;
     color: #212121;
     line-height: 1.5em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 2em;
 }
 .agileinfo_single_left {

@@ -236,7 +236,7 @@ else
 					<input type="submit" value="Register">
 					</form>
 				  </div>
-				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				  
 				</div>
 			</div>
 			<script>

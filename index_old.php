@@ -77,23 +77,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</form>
 	
 		</div>
-		<?php
-if(isset($_SESSION["name"]))
-{
-	echo '
 		<div class="product_list_header">  
 			<form action="useraccount.php" method="post" class="last">
                 <fieldset>
                     <!--<input type="hidden" name="cmd" value="_cart" />-->
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="Check Your Saved Deals" class="button" />
+                    <input type="submit" name="submit" value="Hi,<?Php echo $uname?>" class="button" />
                 </fieldset>
             </form> 
 		</div>
-
-		';
-}
-?>
 		<div class="w3l_header_right">
 
 			<ul>

@@ -68,7 +68,7 @@ i.badge.badge-notify.my-cart-badge {
 }
 .product_list_header span {
     font-size: 1em;
-    color: #18bef0;
+    color: white;
 	top: 1em;
 }
 input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input[type="reset"],.agileinfo_mail_grid_left ul li a,.events_bottom_left2 ul li a,.w3ls_service_grids1_right a,ul.agileits_social_icons li a,.w3l_banner_nav_right_banner_pet a,.w3ls_w3l_banner_nav_right_grid_head_grid ul li a,.products-breadcrumb ul li a,.w3_footer_grid ul li a,.w3l_fresh_vegetables_grid ul li a,.wthree_footer_copy p a,.agile_top_brand_left_grid1 .button,.w3ls_logo_products_left1 ul.special_items li a,.w3ls_logo_products_left1 ul.phone_email li a{
@@ -594,13 +594,14 @@ ul.dropdown-menu.drp-mnu li a i {
     background: #ffa500;
 }
 .product_list_header input.button {
-    color: #18bef0;
+    color: white;
     font-size: 14px;
     outline: none;
     text-transform: capitalize;
     padding: .5em 2.5em .5em 1em;
     border: 1px solid #ffa500;
     margin: .35em 0 0;
+    background-color: #18bef0;
     /*background: url(../images/cart.png) no-repeat 116px 9px;*/
 }
 #PPMiniCart form {
@@ -4249,6 +4250,7 @@ input.checkbox:checked:after {
 	.product_list_header input.button {
 		margin: 0;
 		padding: .3em 2.5em .3em 1em;
+        background-color: #18bef0;
 		/*background: url(../images/cart.png) no-repeat 116px 5px;*/
 	}
 	#PPMiniCart form {
@@ -4834,6 +4836,7 @@ input.checkbox:checked:after {
 	}
 	.product_list_header input.button {
 		padding: .3em 2.5em .3em 0.8em;
+        background-color: #18bef0;
 		/*background: url(../images/cart.png) no-repeat 105px 5px;*/
 		font-size: 13px;
 	}

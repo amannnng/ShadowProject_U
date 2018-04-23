@@ -312,7 +312,7 @@ $id=$_GET["id"];
 				<div class="w3l_banner_nav_right">
 			
 			<div class="agileinfo_single">
-				<h5><p>'.$res["product"].'</p></h5><h5><p><i>from </i>'.$res["brand"].'</p></h5>
+				<h5><p>'.$res["product"].'</p><p><i>from </i>'.$res["brand"].'</p></h5>
 				
 				<div class="col-md-4 agileinfo_single_left">
 					<img id="example" src="'.$res["imgurl"].'" alt=" " class="img-responsive" />

@@ -13,8 +13,8 @@
 	
 	$collection->remove(array("_id"=>new MongoId($id)));
 		
-//	echo'<script language="javascript" type="text/javascript">alert("Your Account Has Been Deleted Successfully.");</script>';
-	header("location:adminportal.php");
+echo'<script language="javascript" type="text/javascript">alert("Coupon Has Been Deleted Successfully.");</script>';
+	header("location:useraccount.php");
 ?>
       
 

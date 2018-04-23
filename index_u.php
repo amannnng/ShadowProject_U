@@ -91,7 +91,9 @@ if(isset($_SESSION["name"]))
             </form> 
 		</div>
 
-		';?>
+		';
+}
+?>
 		<div class="w3l_header_right">
 
 			<ul>

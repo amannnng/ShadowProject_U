@@ -84,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li>Sign In</li>
+				<li>Admin Account Sign In</li>
 			</ul>
 		</div>
 	</div>	
@@ -122,7 +122,7 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
 	}
 	else
 	{
-		echo"enter correct username and password";
+		header('Location: userlogin.php?msg=Inavalid Credentials. Login Failed.');
 	}
 }
 else

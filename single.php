@@ -320,7 +320,7 @@ $id=$_GET["id"];
 				<div class="col-md-8 agileinfo_single_right">
 					<div class="w3agile_description">
 						<h4>Description :</h4>
-						<div>'.$res["description"].'.</div>
+						<pre>'.$res["description"].'.</pre>
 					</div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">

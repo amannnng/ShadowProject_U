@@ -222,7 +222,7 @@ else{
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3> Offers</h3>
+			<h3> Saved Deals</h3>
 			<div class="agile_top_brands_grids">';
 	foreach($row as $res)
 	{

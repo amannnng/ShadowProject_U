@@ -64,33 +64,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- start-smoth-scrolling -->
-<script language="javascript" type="text/javascript">
-									function dropdownlist(listindex)
-									{
-
-									document.formname.subcategory.options.length = 0;
-
-									switch (listindex)
-									{
-										case "category1" :
-											document.formname.subcategory.options[0]=new Option("TV","tv");
-											document.formname.subcategory.options[1]=new Option("Mobile","mobile");
-											document.formname.subcategory.options[2]=new Option("Laptop","laptop");
-											break;
-
-										case "category2" :
-											document.formname.subcategory.options[0]=new Option("Kitchen","kitchen");
-											document.formname.subcategory.options[1]=new Option("Decor","decor");
-											document.formname.subcategory.options[2]=new Option("Home Appliances","home appliances");
-											break;
-
-										default:
-											document.formname.subcategory.options[0]=new Option("Select Category")
-											break;
-									}
-									return true;
-									}
-</script>
 </head>
 	
 <body>
@@ -148,30 +121,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<form action="adminupload.php" method="post" enctype="multipart/form-data">
 						<input type="text" name="brand" placeholder="Brand Name" required=" ">
 						<input type="text" name="product" placeholder="Product Name" required=" ">
-						
-						<form id="formname" name="formname" method="post" action="adminportal.php" >
-							<table width="50%" border="0" cellspacing="0" cellpadding="5">
-							<tr>
-							<td width="41%" align="right" valign="middle">Category :</td>
-							<td width="59%" align="left" valign="middle"><select name="category" id="category" onchange="dropdownlist(this.options[this.selectedIndex].value);">
-							<option value="">Select Category</option>
-							<option value="category1">Electronics</option>
-							<option value="category2">Home</option>
-							</select></td>
-							</tr>
-							<tr>
-							<td align="right" valign="middle">Sub Category :
-							</td>
-							<td align="left" valign="middle"><script type="text/javascript" language="JavaScript">
-							document.write('<select name="subcategory"><option value="">Select Sub-Category</option></select>')
-							</script>
-							<noscript><select name="subcategory" id="subcategory" >
-							<option value="">Select Sub-Category</option>
-							</select>
-							</noscript></td>
-							</tr>
-							</table>
-					</form> 
+						<select name="category">
+							<option selected="selected">Select categary</option>
+							<option value="electronics">Electronics</option>
+							<option value="home">Home</option>
+						</select>
+						<select name="subcategory">
+							<option selected="selected">Select categary</option>
+							<option value="mobile">Mobile</option>
+							<option value="television">Television</option>
+							<option value="laptop">Laptop</option>
+							<option value="furniture">Furniture</option>
+							<option value="kitchen">Kitchen</option>
+							<option value="homeappliance">Home Appliance</option>
+							<option value="decor">Decor</option>
+						</select>
 						<br>
 						<br>
 					<textarea  name="description" placeholder="Description" required=" " rows="10" cols="35"></textarea><br><br>

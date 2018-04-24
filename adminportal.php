@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									}
 									return true;
 									}
-						</script>
+</script>
 </head>
 	
 <body>
@@ -149,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<input type="text" name="brand" placeholder="Brand Name" required=" ">
 						<input type="text" name="product" placeholder="Product Name" required=" ">
 						
-						<form id="formname" name="formname" method="post" action="submitform.asp" >
+						<form id="formname" name="formname" method="post" action="adminportal.php" >
 							<table width="50%" border="0" cellspacing="0" cellpadding="5">
 							<tr>
 							<td width="41%" align="right" valign="middle">Category :</td>

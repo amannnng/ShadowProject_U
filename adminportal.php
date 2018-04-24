@@ -64,6 +64,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- start-smoth-scrolling -->
+<script language="javascript" type="text/javascript">
+									function dropdownlist(listindex)
+									{
+
+									document.formname.subcategory.options.length = 0;
+
+									switch (listindex)
+									{
+										case "category1" :
+											document.formname.subcategory.options[0]=new Option("TV","tv");
+											document.formname.subcategory.options[1]=new Option("Mobile","mobile");
+											document.formname.subcategory.options[2]=new Option("Laptop","laptop");
+											break;
+
+										case "category2" :
+											document.formname.subcategory.options[0]=new Option("Kitchen","kitchen");
+											document.formname.subcategory.options[1]=new Option("Decor","decor");
+											document.formname.subcategory.options[2]=new Option("Home Appliances","home appliances");
+											break;
+
+										default:
+											document.formname.subcategory.options[0]=new Option("Select Category")
+											break;
+									}
+									return true;
+									}
+						</script>
 </head>
 	
 <body>
@@ -121,33 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<form action="adminupload.php" method="post" enctype="multipart/form-data">
 						<input type="text" name="brand" placeholder="Brand Name" required=" ">
 						<input type="text" name="product" placeholder="Product Name" required=" ">
-						<script language="javascript" type="text/javascript">
-									function dropdownlist(listindex)
-									{
-
-									document.formname.subcategory.options.length = 0;
-
-									switch (listindex)
-									{
-										case "category1" :
-											document.formname.subcategory.options[0]=new Option("TV","tv");
-											document.formname.subcategory.options[1]=new Option("Mobile","mobile");
-											document.formname.subcategory.options[2]=new Option("Laptop","laptop");
-											break;
-
-										case "category2" :
-											document.formname.subcategory.options[0]=new Option("Kitchen","kitchen");
-											document.formname.subcategory.options[1]=new Option("Decor","decor");
-											document.formname.subcategory.options[2]=new Option("Home Appliances","home appliances");
-											break;
-
-										default:
-											document.formname.subcategory.options[0]=new Option("Select Category")
-											break;
-									}
-									return true;
-									}
-						</script>
+						
 						<form id="formname" name="formname" method="post" action="submitform.asp" >
 							<table width="50%" border="0" cellspacing="0" cellpadding="5">
 							<tr>

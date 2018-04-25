@@ -1526,7 +1526,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Calibri;
 }
 code {
   padding: 2px 4px;
@@ -1555,7 +1555,7 @@ pre {
   display: block;
   /*padding: 9.5px;*/
   margin: 0 0 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333;
   word-break: break-all;

@@ -160,7 +160,7 @@ else{
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<p style="color:DodgerBlue;">Get Great Deals on many products</p>
+					<p style="color:DodgerBlue;">Awesome Deals on few clicks....!!</p>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
